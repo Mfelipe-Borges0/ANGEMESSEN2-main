@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide_18</title>
+    <style>
+        body {
+            /* background: url(Imagem/Degrade.jpg) no-repeat; */
+            /* background-size: cover; */
+            text-align: center;
+            color: #ffffff;
+            font-family: system-ui;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        @font-face {
+            font-family: Naville;
+            src: url("../Naville/Naville-Regular.ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            background-color: #121212;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        footer {
+            position: static;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: yellow;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: yellow;
+
+
+        }
+
+        header .logo {
+            position: relative;
+            max-width: 150px;
+            color: rgb(0, 0, 0);
+            font-family: Naville;
+            text-transform: uppercase;
+            font-size: 2vw;
+        }
+
+        header .navegation ul {
+            position: relative;
+            display: flex;
+        }
+
+        header .navegation li {
+            list-style: none;
+            color: rgb(0, 0, 0);
+        }
+
+        header .navegation li a {
+            color: rgb(0, 0, 0);
+            display: flex;
+            text-decoration: none;
+            width: 30px;
+            height: 30px;
+            margin-left: 45px;
+            border-radius: 50%;
+            transition: 0.5s ease-in-out;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .navegation li a:hover {
+            transform: translateY(-10px);
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        header .navegation li img:hover {
+            filter: invert(1);
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container .text {
+            position: relative;
+            max-width: 600px;
+            margin-right: 20px;
+        }
+
+        .container .text h2 {
+            color: aliceblue;
+            font-size: 2em;
+            margin-bottom: 10px;
+            line-height: 2.5em;
+            font-weight: 700;
+        }
+
+        .container .text h2 span {
+            font-size: 2.5em;
+            color: yellow;
+
+        }
+
+        .container .text p {
+            color: aliceblue;
+        }
+
+        .container .text a {
+            display: inline-block;
+            margin-top: 50px;
+            padding: 10px 25px;
+            background: yellow;
+            color: black;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1px;
+            border-radius: 40px;
+            transition: 0.5s ease-in-out;
+        }
+
+        .container .text a:hover {
+            transform: translateY(-10px);
+
+        }
+
+        .icons {
+            position: absolute;
+            left: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .icons li {
+            list-style: none;
+        }
+
+        .icons li a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .icons li a:hover {
+            transform: translateY(-10px);
+            background: yellow;
+
+        }
+
+        .icons li img {
+            filter: invert(1);
+        }
+
+        input[type="text"] {
+            background-color: rgb(255, 253, 137);
+            color: rgb(0, 0, 0);
+            border: 1px solid yellow;
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .search-btn {
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/icons8-pesquisar-50.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            position: absolute;
+            top: 42px;
+        }
+
+        .dados_pessoais {
+            color: #ffffff;
+            font-size: larger;
+        }
+
+        .teste {
+            margin-top: 10%;
+        }
+
+        .img_real_usuario {
+            border-radius: 6%;
+        }
+
+        .vam {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h2 class="logo">ANGEMESSEN</h2>
+            <nav>
+                botão aqui
+            </nav>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#"><img src="./img/icons8-carrinho-de-compras-64.png" width="24px" height="24px"></a>
+                    </li>
+                    <li><a href="#"><img src="./img/user.png" width="30px" height="30px"></a></li>
+                </ul>
+            </nav>
+        </header>
+<<<<<<< HEAD
+        <div class="vam">
+            <div><img src="Imagem/Degrade_Vermelho.lnk" width="195px" height="295px" alt="" class="img_real_usuario"
+                    style="display: flex;"></div><br>
+
+            <div>
+                <H1>Brunno Henrique Borges</H1><br>
+=======
+        <div class="teste">
+            <div><img src="Imagem/Degrade_Vermelho.lnk" width="195px" height="295px" alt="" class="img_real_usuario" style="display: flex;"></div><br>
+                <div><H1>Brunno Henrique Borges</H1></div><br>
+>>>>>>> 6297774c677cbb3838a9544a60b4d9999e5020ac
+                <div>Membro Cadastrado</div><br>
+                <img src="./img/carrinho_amarelo.png" width="16px" height="16px"> Carrinho<br>
+                <img src="./img/historico_amarelo.png" width="16px" height="16px"> Histórico<br>
+                <img src="./img/curtido_amarelo.png" width="14px" height="14px"> Favoritos<br>
+                <div class="dados_pessoais">Dados Pessoais</div>
+
+                CPF: ***********
+                <br><br>
+                NOME DO CARTÃO: ***************
+                <br><br>
+                NÚMERO O CARTÃO: ****************
+                <br><br>
+                ENDEREÇO: *********************************
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><img src="./img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="./img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="./img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

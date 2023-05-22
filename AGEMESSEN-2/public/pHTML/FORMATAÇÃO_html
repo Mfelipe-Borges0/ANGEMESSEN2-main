@@ -1,0 +1,45 @@
+     <!--CABEÇALHO-->
+        <header>
+          <section class="dominante"> 
+              <div class="angemessen">
+                <h2 class="logo">ANGEMESSEN</h2>
+              </div>
+            <div class="teste">
+              <form method="post" action="/enviar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit" class="search-btn"></button>
+            </form>
+            </div>
+            
+            <nav class="navegation">
+                <ul class="banana">
+                    <li><a href="#"><img src="./img/icons8-shopping-trolley-30.png" width="30px"height="30px"></a></li>
+                    <li><a href="#"><img src="./img/icons8-usuário-24.png" width="30px" height="30px"></a></li>
+                </ul>
+            </nav>
+          </section>
+          <section class="recessiva">
+            <ul class="menu">
+              <li><a href="#">PRODUTOS</a></li>
+              <li><a href="#">COLEÇÕES</a></li>
+              <li><a href="#">SOBRE NÓS</a></li>
+            </ul>
+
+          </section>
+      </header>
+      </div>
+        
+        <!--CONTEUDO PRINCIPAL-->
+    <section class="produtos">
+    
+    </section>
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><img src="./img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="./img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="./img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer> 
+</body>
+</html>
+
