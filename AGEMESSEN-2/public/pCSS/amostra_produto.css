@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#amostra{
+
+}
+
+#imgball{
+    width: 50px;
+    height: 190px;
+}
+
+#collumn{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+#miniball{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}
+
+
