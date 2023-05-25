@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide_18</title>
+    <title>Pop-up</title>
+</head>
     <style>
         body {
-            /* background: url(Imagem/Degrade.jpg) no-repeat; */
-            /* background-size: cover; */
+            background: url(Imagem/Degrade_Vermelho.lnk) no-repeat;
+            background-size: cover;
             text-align: center;
             color: #ffffff;
             font-family: system-ui;
+            font-size: larger;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -35,9 +37,9 @@
             min-height: 100vh;
             padding: 100px;
             background-color: #121212;
-            display: flex;
+            /* display: flex; */
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             overflow: hidden;
         }
 
@@ -117,48 +119,6 @@
             justify-content: space-between;
         }
 
-        .container .text {
-            position: relative;
-            max-width: 600px;
-            margin-right: 20px;
-        }
-
-        .container .text h2 {
-            color: aliceblue;
-            font-size: 2em;
-            margin-bottom: 10px;
-            line-height: 2.5em;
-            font-weight: 700;
-        }
-
-        .container .text h2 span {
-            font-size: 2.5em;
-            color: yellow;
-
-        }
-
-        .container .text p {
-            color: aliceblue;
-        }
-
-        .container .text a {
-            display: inline-block;
-            margin-top: 50px;
-            padding: 10px 25px;
-            background: yellow;
-            color: black;
-            font-weight: 500;
-            text-decoration: none;
-            letter-spacing: 1px;
-            border-radius: 40px;
-            transition: 0.5s ease-in-out;
-        }
-
-        .container .text a:hover {
-            transform: translateY(-10px);
-
-        }
-
         .icons {
             position: absolute;
             left: 100px;
@@ -193,108 +153,99 @@
         .icons li img {
             filter: invert(1);
         }
-
-        input[type="text"] {
-            background-color: rgb(255, 253, 137);
-            color: rgb(0, 0, 0);
-            border: 1px solid yellow;
-            width: 300px;
-            height: 30px;
-            border: none;
-            border-radius: 10px;
+         .falta_cadastro {
+            margin-top: 200px;
+            font-size: 20px;
         }
 
-        .search-btn {
-            width: 24px;
-            height: 24px;
-            background-image: url("../img/icons8-pesquisar-50.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            border: none;
-            outline: none;
-            background-color: transparent;
-            position: absolute;
-            top: 42px;
+        .emoticon {
+            font-size: 50px;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            color: yellow;
         }
 
-        .dados_pessoais {
+        .link_cadastro {
             color: #ffffff;
-            font-size: larger;
-        }
-
-        .teste {
-            margin-top: 10%;
-        }
-
-        .img_real_usuario {
-            border-radius: 6%;
-        }
-
-        .vam {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .tampa {
-            text-align: left;
-        }
-        .James li {
-            list-style: none;
-        }
-        .James li a {
             font-size: medium;
-            color: white;
             text-decoration: none;
         }
-    </style>
-</head>
 
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-content {
+            background-color: #1d1d1d;
+            color: #ffffff;
+            margin: 15% auto;
+            border-radius: 1%;
+            padding: 20px;
+            border: 1px solid yellow;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 <body>
     <section>
-        <header>
-            <h2 class="logo">ANGEMESSEN</h2>
-            <nav>
-                botão aqui
-            </nav>
-            <nav class="navegation">
-                <ul>
-                    <li><a href="#"><img src="../../img/icons8-shopping-trolley-24.png" width="30px" height="30px"></a></li>
-                    <li><a href="#"><img src="../../img/icons8-usuário-24.png" width="30px" height="30px"></a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <h2 class="logo">ANGEMESSEN</h2>
+        <nav>
+            botão aqui
+        </nav>
+        <nav class="navegation">
+            <ul>
+                <li><a href="#"><img src="../../img/icons8-shopping-trolley-24.png" width="30px" height="30px"></a></li>
+                <li><a href="Slide_9.html"><img src="../../img/icons8-usuário-24.png" width="30px" height="30px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <button onclick="openPopup()" style="margin-top: 60px;">Abrir Pop-up</button>
 
-        <div class="vam">
-            <div><img src="../../Imagem/Degrade_Vermelho.lnk" width="195px" height="295px" alt="" class="img_real_usuario"
-                    style="display: flex;"></div><br>
-
-            <div class="tampa">
-                <H1>Brunno Henrique Borges</H1><br>
-
-                <div>Membro Cadastrado</div><br>
-                <ul class="James">
-                <li><a href="#"><img src="../../img/carrinho_amarelo.png" width="16px" height="16px"> Carrinho<br></a></li>
-                <li><a href="#"><img src="../../img/historico_amarelo.png" width="16px" height="16px"> Histórico<br></a></li>
-                <li><a href="#"><img src="../../img/curtido_amarelo.png" width="14px" height="14px"> Favoritos<br></a></li>
-                </ul><br>
-                <div class="dados_pessoais">Dados Pessoais</div>
-
-                <form action="....php" method="post" class="teste">
-
-                    CPF: 
-                    <br><br>
-                    NOME DO CARTÃO: 
-                    <br><br>
-                    NÚMERO O CARTÃO: 
-                    <br><br>
-                    ENDEREÇO: 
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                    <p>▏Não é possível!!▕</p>
+                    <p class="emoticon"><b>	＼(º ▵ º l|l)/</b></p>
+                    <br>
+                <p style="padding-bottom: 2%;">Parece que você não está cadastrado!</p>
+                <p><b>⤷</b> <a class="link_cadastro" href="Slide_9.html"><b>Cadastre-se</b></a></p>
                 </div>
-
-                </form>
-
+            </div>
         </div>
     </section>
+    <script>
+        function openPopup() {
+                document.getElementById('popup').style.display = 'block';
+            }
+
+        function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+    </script>
     <footer>
         <ul class="icons">
             <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
@@ -303,5 +254,4 @@
         </ul>
     </footer>
 </body>
-
 </html>
