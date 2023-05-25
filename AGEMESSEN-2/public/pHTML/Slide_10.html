@@ -1,155 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados_Compra</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/pCSS/FORMATAÇÃO.css" >
+    <title>Dados_Compra</title>
 </head>
 
+
 <body>
-    <header>
-        <section class="dominante"> 
-            <div class="angemessen">
-              <h2 class="logo">ANGEMESSEN</h2>
-            </div>
-          <!--<div class="teste">
-            <form method="post" action="/enviar">
-              <input type="text" placeholder="Pesquisar...">
-              <button type="submit" class="search-btn"></button>
-          </form>-->
-          </div>
-          
-          <nav class="navegation">
-              <div class="banana">
-                <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
-                  <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
-                  <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
-              </div>
-          </nav>
-        </section>
-        <section class="recessiva">
-          <ul class="menu">
-            <li><a href="#">PRODUTOS</a></li>
-            <li><a href="#">COLEÇÕES</a></li>
-            <li><a href="#">SOBRE NÓS</a></li>
-          </ul>
+    <header>
+        <section class="dominante">
+            <div class="angemessen">
+              <h2 class="logo">ANGEMESSEN</h2>
+            </div>
+          <!--<div class="teste">
+            <form method="post" action="/enviar">
+              <input type="text" placeholder="Pesquisar...">
+              <button type="submit" class="search-btn"></button>
+          </form>-->
+          </div>
+         
+          <nav class="navegation">
+              <div class="banana">
+                <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
+                  <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
+                  <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
+              </div>
+          </nav>
+        </section>
+        <section class="recessiva">
+          <ul class="menu">
+            <li><a href="#">PRODUTOS</a></li>
+            <li><a href="#">COLEÇÕES</a></li>
+            <li><a href="#">SOBRE NÓS</a></li>
+          </ul>
 
-        </section>
-    </header>
-<section class="produtos">
-        <div class="teste">
-            <div class="informacoes_comprador"><b>INFORMAÇÕES DO COMPRADOR</b></div>
-        </div>
-        <div class="box">
-            <div>
-                <label for="nome">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
 
-                <label for="sobrenome">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50" 
-                    style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Nome</p>
-                    <p style="margin-left: 331px">Sobrenome</p>
-                </div>
-            </div>
+        </section>
+    </header>
+    <!--CONTEUDO PRINCIPAL-->
+    <section class="produtos">
+        <div class="teste">
+            <div class="informacoes_comprador"><b>INFORMAÇÕES DO COMPRADOR</b></div>
+        </div>
+        <div class="box">
+            <div>
+                <label for="nome">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
 
-            <div>
-                <label for="nome_Cartão">
-                    <input type="text" class="input_text" inpu name="Nome" size="40"
-                        maxlength="50" required>
-                </label>
 
-                <label for="número_Cartão">
-                    <input type="text" class="input_text" name="Nome" size="40"
-                        maxlength="50" style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Nome do cartão</p>
-                    <p style="margin-left: 273px">Número do cartão</p>
-                </div>
-            </div>
+                <label for="sobrenome">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                    style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Nome</p>
+                    <p style="margin-left: 331px">Sobrenome</p>
+                </div>
+            </div>
 
-            <div class="ccv_val">
-                <label for="ccv">
-                    <input type="text" class="input_text" name="Nome" size="10" maxlength="50"
-                        required>
-                </label>
 
-                <label for="val">
-                    <input type="date" class="input_text" name="Nome" size="10" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p style="margin-left: -225px">CCV</p>
-                    <p style="margin-left: 128px">VAL</p>
-                </div>
-            </div>
+            <div>
+                <label for="nome_Cartão">
+                    <input type="text" class="input_text" inpu name="Nome" size="40"
+                        maxlength="50" required>
+                </label>
 
-            <div class="endereco_mudanca"><H4>ENDEREÇO DE MUDANÇA</H4></div>
 
-            <div>
-                <label for="complemento">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+                <label for="número_Cartão">
+                    <input type="text" class="input_text" name="Nome" size="40"
+                        maxlength="50" style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Nome do cartão</p>
+                    <p style="margin-left: 273px">Número do cartão</p>
+                </div>
+            </div>
 
-                <label for="país">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Complemento</p>
-                    <p style="margin-left: 285px">País</p>
-                </div>
-            </div>
 
-            <div>
-                <label for="cidade">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+            <div class="ccv_val">
+                <label for="ccv">
+                    <input type="text" class="input_text" name="Nome" size="10" maxlength="50"
+                        required>
+                </label>
 
-                <label for="telefone">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Cidade</p>
-                    <p style="margin-left: 325px">Telefone</p>
-                </div>
-            </div>
 
-            <div>
-                <label for="rua">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+                <label for="val">
+                    <input type="date" class="input_text" name="Nome" size="10" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p style="margin-left: -225px">CCV</p>
+                    <p style="margin-left: 128px">VAL</p>
+                </div>
+            </div>
 
-                <label for="cep">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Rua</p>
-                    <p style="margin-left: 342px">CEP</p>
-                </div>
-            </div>
-        </div>
 
-    </section>
-<footer>
-        <ul class="icons">
-            <li><a href="#"><img src="./img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
-            <li><a href="#"><img src="./img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
-            <li><a href="#"><img src="./img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
-        </ul>
-    </footer>
+            <div class="endereco_mudanca"><H4>ENDEREÇO DE MUDANÇA</H4></div>
+
+
+            <div>
+                <label for="complemento">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
+
+
+                <label for="país">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Complemento</p>
+                    <p style="margin-left: 285px">País</p>
+                </div>
+            </div>
+
+
+            <div>
+                <label for="cidade">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
+
+
+                <label for="telefone">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Cidade</p>
+                    <p style="margin-left: 325px">Telefone</p>
+                </div>
+            </div>
+
+
+            <div>
+                <label for="rua">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
+
+
+                <label for="cep">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Rua</p>
+                    <p style="margin-left: 342px">CEP</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><img src="./img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="./img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="./img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer>
 </body>
 
+
 </html>
+
