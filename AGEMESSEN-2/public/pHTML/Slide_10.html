@@ -2,332 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados_Compra</title>
-    <style>
-        body {
-            background: url(Imagem/Degrade.jpg) no-repeat;
-            background-size: cover;
-            text-align: center;
-            color: #ffffff;
-            font-family: system-ui;
-            font-size: larger;
-        }
-
-        .dados_pessoais {
-            color: #ffffff;
-            font-size: larger;
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-        @font-face {
-            font-family: Naville;
-            src: url("../Naville/Naville-Regular.ttf");
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        section {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            padding: 100px;
-            background-color: #121212;
-            /* display: flex; */
-            align-items: center;
-            justify-content: space-between;
-            overflow: hidden;
-        }
-
-        footer {
-            position: static;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 25px 100px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: yellow;
-        }
-
-        header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 40px 100px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: yellow;
-
-
-        }
-
-        header .logo {
-            position: relative;
-            max-width: 150px;
-            color: rgb(0, 0, 0);
-            font-family: Naville;
-            text-transform: uppercase;
-            font-size: 2vw;
-        }
-
-        header .navegation ul {
-            position: relative;
-            display: flex;
-        }
-
-        header .navegation li {
-            list-style: none;
-            color: rgb(0, 0, 0);
-        }
-
-        header .navegation li a {
-            color: rgb(0, 0, 0);
-            display: flex;
-            text-decoration: none;
-            width: 30px;
-            height: 30px;
-            margin-left: 45px;
-            border-radius: 50%;
-            transition: 0.5s ease-in-out;
-            align-items: center;
-            justify-content: center;
-        }
-
-        header .navegation li a:hover {
-            transform: translateY(-10px);
-            background-color: rgb(0, 0, 0);
-            color: white;
-        }
-
-        header .navegation li img:hover {
-            filter: invert(1);
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .icons {
-            position: absolute;
-            left: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .icons li {
-            list-style: none;
-        }
-
-        .icons li a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-left: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s ease-in-out;
-        }
-
-        .icons li a:hover {
-            transform: translateY(-10px);
-            background: yellow;
-
-        }
-
-        .icons li img {
-            filter: invert(1);
-        }
-
-        .teste {
-            margin-top: 10%;
-        }
-
-        div.box .input_text {
-            padding: 10px 10px;
-            background-color: rgba(0, 0, 0, 0);
-            border-bottom: 1px double #ffffff;
-            border-top: 1px double #00000000;
-            border-left: 1px double #00000000;
-            border-right: 1px double #00000000;
-            color: #ffffff;
-            margin-bottom: 30px;
-        }
-
-        .texto{
-            font-size: small;
-            display: flex;
-            margin-left: 238px;
-            margin-top: -25px;
-            margin-bottom: 10px;
-        }
-
-        .informacoes_comprador{
-            margin-bottom: 100px;
-            font-size: 25px;
-        }
-
-        .endereco_mudanca{
-            margin-top: 70px;
-            margin-bottom: 30px;
-            text-align: left;
-            margin-left: 225px;
-        }
-
-        .ccv_val{
-            text-align: left;
-            margin-left: 226px;
-        }
-    
- 
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados_Compra</title>
 </head>
 
 <body>
-    <section>
-        <header>
-            <h2 class="logo">ANGEMESSEN</h2>
-            <nav>
-                botão aqui
-            </nav>
-            <nav class="navegation">
-                <ul>
-                    <li><a href="#"><img src="./img/icons8-carrinho-de-compras-64.png" width="24px" height="24px"></a>
-                    </li>
-                    <li><a href="Slide_18.html"><img src="./img/user.png" width="30px" height="30px"></a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="teste">
-            <div class="informacoes_comprador"><b>INFORMAÇÕES DO COMPRADOR</b></div>
-        </div>
-        <div class="box">
-            <div>
-                <label for="nome">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+    <header>
+        <section class="dominante"> 
+            <div class="angemessen">
+              <h2 class="logo">ANGEMESSEN</h2>
+            </div>
+          <!--<div class="teste">
+            <form method="post" action="/enviar">
+              <input type="text" placeholder="Pesquisar...">
+              <button type="submit" class="search-btn"></button>
+          </form>-->
+          </div>
+          
+          <nav class="navegation">
+              <div class="banana">
+                <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
+                  <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
+                  <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
+              </div>
+          </nav>
+        </section>
+        <section class="recessiva">
+          <ul class="menu">
+            <li><a href="#">PRODUTOS</a></li>
+            <li><a href="#">COLEÇÕES</a></li>
+            <li><a href="#">SOBRE NÓS</a></li>
+          </ul>
 
-                <label for="sobrenome">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50" 
-                    style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Nome</p>
-                    <p style="margin-left: 331px">Sobrenome</p>
-                </div>
-            </div>
+        </section>
+    </header>
+<section class="produtos">
+        <div class="teste">
+            <div class="informacoes_comprador"><b>INFORMAÇÕES DO COMPRADOR</b></div>
+        </div>
+        <div class="box">
+            <div>
+                <label for="nome">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
 
-            <div>
-                <label for="nome_Cartão">
-                    <input type="text" class="input_text" inpu name="Nome" size="40"
-                        maxlength="50" required>
-                </label>
+                <label for="sobrenome">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50" 
+                    style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Nome</p>
+                    <p style="margin-left: 331px">Sobrenome</p>
+                </div>
+            </div>
 
-                <label for="número_Cartão">
-                    <input type="text" class="input_text" name="Nome" size="40"
-                        maxlength="50" style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Nome do cartão</p>
-                    <p style="margin-left: 273px">Número do cartão</p>
-                </div>
-            </div>
+            <div>
+                <label for="nome_Cartão">
+                    <input type="text" class="input_text" inpu name="Nome" size="40"
+                        maxlength="50" required>
+                </label>
 
-            <div class="ccv_val">
-                <label for="ccv">
-                    <input type="text" class="input_text" name="Nome" size="10" maxlength="50"
-                        required>
-                </label>
+                <label for="número_Cartão">
+                    <input type="text" class="input_text" name="Nome" size="40"
+                        maxlength="50" style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Nome do cartão</p>
+                    <p style="margin-left: 273px">Número do cartão</p>
+                </div>
+            </div>
 
-                <label for="val">
-                    <input type="date" class="input_text" name="Nome" size="10" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p style="margin-left: -225px">CCV</p>
-                    <p style="margin-left: 128px">VAL</p>
-                </div>
-            </div>
+            <div class="ccv_val">
+                <label for="ccv">
+                    <input type="text" class="input_text" name="Nome" size="10" maxlength="50"
+                        required>
+                </label>
 
-            <div class="endereco_mudanca"><H4>ENDEREÇO DE MUDANÇA</H4></div>
+                <label for="val">
+                    <input type="date" class="input_text" name="Nome" size="10" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p style="margin-left: -225px">CCV</p>
+                    <p style="margin-left: 128px">VAL</p>
+                </div>
+            </div>
 
-            <div>
-                <label for="complemento">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+            <div class="endereco_mudanca"><H4>ENDEREÇO DE MUDANÇA</H4></div>
 
-                <label for="país">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Complemento</p>
-                    <p style="margin-left: 285px">País</p>
-                </div>
-            </div>
+            <div>
+                <label for="complemento">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
 
-            <div>
-                <label for="cidade">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+                <label for="país">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Complemento</p>
+                    <p style="margin-left: 285px">País</p>
+                </div>
+            </div>
 
-                <label for="telefone">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Cidade</p>
-                    <p style="margin-left: 325px">Telefone</p>
-                </div>
-            </div>
+            <div>
+                <label for="cidade">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
 
-            <div>
-                <label for="rua">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        required>
-                </label>
+                <label for="telefone">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Cidade</p>
+                    <p style="margin-left: 325px">Telefone</p>
+                </div>
+            </div>
 
-                <label for="cep">
-                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                        style="margin-left: 30px" required>
-                </label>
-                <div class="texto">
-                    <p>Rua</p>
-                    <p style="margin-left: 342px">CEP</p>
-                </div>
-            </div>
-        </div>
+            <div>
+                <label for="rua">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        required>
+                </label>
 
-    </section>
-    <footer>
-        <ul class="icons">
-            <li><a href="#"><img src="./img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
-            <li><a href="#"><img src="./img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
-            <li><a href="#"><img src="./img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
-        </ul>
-    </footer>
+                <label for="cep">
+                    <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
+                        style="margin-left: 30px" required>
+                </label>
+                <div class="texto">
+                    <p>Rua</p>
+                    <p style="margin-left: 342px">CEP</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<footer>
+        <ul class="icons">
+            <li><a href="#"><img src="./img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="./img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="./img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
