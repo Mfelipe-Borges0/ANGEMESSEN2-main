@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.3"
+  },
+  "name": "angemessen2-main",
+  "description": "Segundo repositório porque o primeiro deu problema.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mfelipe-Borges0/ANGEMESSEN2-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mfelipe-Borges0/ANGEMESSEN2-main/issues"
+  },
+  "homepage": "https://github.com/Mfelipe-Borges0/ANGEMESSEN2-main#readme"
+}
