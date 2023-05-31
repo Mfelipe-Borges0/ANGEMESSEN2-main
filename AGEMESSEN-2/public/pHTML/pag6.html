@@ -5,52 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="pag6.css">
+    <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
+    <link rel="stylesheet" href="../pCSS/pag6.css">
+    <title>Pagina inicial - angemessen</title>
 </head>
 
 <body>
-    <section>
-        <!--CABEÇALHO-->
-        <header>
-            <h2 class="logo">ANGEMESSEN</h2>
-            <form>
+
+    <!--CABEÇALHO-->
+    <header>
+        <section class="dominante">
+            <div class="angemessen">
+                <h2 class="logo">ANGEMESSEN</h2>
+            </div>
+            <!--<div class="teste">
+              <form method="post" action="/enviar">
                 <input type="text" placeholder="Pesquisar...">
                 <button type="submit" class="search-btn"></button>
-            </form>
+            </form>-->
+            </div>
             <nav class="navegation">
-                <ul>
-                    <li><a href="#"><img src="carrinho.png" width="24px" height="24px"></a></li>
-                    <li><a href="#"><img src="user.png" width="30px" height="30px"></a></li>
-                </ul>
+                <div class="banana">
+                    <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px" height="24px"></a>
+                    </div>
+                    <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px" height="24px"></a>
+                    </div>
+                    <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px"
+                                height="24px"></a></div>
+                </div>
             </nav>
-        </header>
-        <!--CONTEUDO PRINCIPAL-->
-        <div class="cabecalho">
-            <ul class="slider">
-                <li>
-                    <input type="radio" id="slide1" name="slide" checked>
-                    <label for="slide1"></label>
-                    <img src="fundo.png">
-                </li>
-                <li>
-                    <input type="radio" id="slide2" name="slide">
-                    <label for="slide2"></label>
-                    <img src="fundocarrossel.PNG">
-                </li>
-                <li>
-                    <input type="radio" id="slide3" name="slide">
-                    <label for="slide3"></label>
-                     <img src="bola.png">
-                </li>
+        </section>
+        <section class="recessiva">
+            <ul class="menu">
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">COLEÇÕES</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
             </ul>
+        </section>
+    </header>
+    </div>
+    <!--CONTEUDO PRINCIPAL-->
+    <section class="produtos">
+
+        <div class="Promocoes">
+            <div class="slideshow-container">
+                <!-- Imagens com a contagem do slide que elas pertencem -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <a href="/promocao">
+                        <div class="PromocaoEstilo">
+                            <img src="../../Imagem/fundocarrossel.PNG">
+                        </div>
+                    </a>
+                    <!-- Angemessen -->
+                        <div class="purple">DIFERENCIAL ANGEMESSEN</div>
+                        
+                    <!-- Angemessen -->
+                </div>
+                <!-- <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <a href="/promocao">
+                        <div class="PromocaoEstilo">
+                            <img src="/img/imgPromoções/Promocao2.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <a href="/promocao">
+                        <div class="PromocaoEstilo">
+                            <img src="/img/imgPromoções/Promocao3.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <a href="/promocao">
+                        <div class="PromocaoEstilo">
+                            <img src="/img/imgPromoções/Promocao4.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <a href="/promocao">
+                        <div class="PromocaoEstilo">
+                            <img src="/img/imgPromoções/Promocao5.png">
+                        </div>
+                    </a>
+                </div> -->
+                <!-- Botao de avançar e voltar -->
+                <a class="prev" onclick="plusSlides(-1)">
+                    <img src="../../Imagem/seta1.PNG">
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <img src="../../Imagem/seta1.PNG">
+                </a>
+            </div>
+            <script src="pag6.js"></script>
         </div>
+
     </section>
-    <footer class="contato">
+    <footer>
         <ul class="icons">
-            <li><a href="#"><img src="instagram.png" width="24px" height="24px"></a></li>
-            <li><a href="#"><img src="facebook.png" width="26px" height="26px"></a></li>
-            <li><a href="#"><img src="linkedin.png" width="20px" height="20px"></a></li>
+            <li><a href="#"><img src="" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
         </ul>
     </footer>
 </body>
