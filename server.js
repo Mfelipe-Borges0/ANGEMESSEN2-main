@@ -5,6 +5,12 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+const app: require('path')
+app.use('/assets', express.static('assets'))
+app.use('/img', express.static('img'))
+app.use('/public/pCSS', express.static('pCSS'))
+
+
 const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
@@ -21,7 +27,7 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
+  res.sendFile(__dirname + '/pagina15.html')
 })
  
 app.post('/login', (req, res) => {
