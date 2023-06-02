@@ -8,7 +8,7 @@
     <title>Pagina inicial - angemessen</title>
 </head>
 <body>
-    
+  <section>
         <!--CABEÇALHO-->
       <header>
       <section class="dominante"> 
@@ -37,7 +37,6 @@
           </ul>
           </section>
       </header>
-      </div>
         <!--CONTEUDO PRINCIPAL-->
       <section class="produtos">
     

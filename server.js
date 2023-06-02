@@ -5,17 +5,16 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const app: require('path')
+const app = require('path')
 app.use('/assets', express.static('assets'))
 app.use('/img', express.static('img'))
 app.use('/public/pCSS', express.static('pCSS'))
-
 
 const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
   password: 'root',
-  database: 'bd-node',
+  database: ' ??? ', //<--- Banco de Dados
 });
 
 connection.connect(function (err) {
