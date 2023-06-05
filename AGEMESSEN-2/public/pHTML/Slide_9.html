@@ -5,149 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
     <title>Cadastro</title>
 </head>
 <style>
     body {
         color: #ffffff;
-        text-align: center;
-    }
-
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-    @font-face {
-        font-family: Naville;
-        src: url("../Naville/Naville-Regular.ttf");
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    section {
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
-        padding: 100px;
-        background-color: #121212;
-        /* display: flex; */
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-    }
-
-    footer {
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 25px 100px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: yellow;
-    }
-
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 40px 100px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: yellow;
-
-
-    }
-
-    header .logo {
-        position: relative;
-        max-width: 150px;
-        color: rgb(0, 0, 0);
-        font-family: Naville;
-        text-transform: uppercase;
-        font-size: 2vw;
-    }
-
-    header .navegation ul {
-        position: relative;
-        display: flex;
-    }
-
-    header .navegation li {
-        list-style: none;
-        color: rgb(0, 0, 0);
-    }
-
-    header .navegation li a {
-        color: rgb(0, 0, 0);
-        display: flex;
-        text-decoration: none;
-        width: 30px;
-        height: 30px;
-        margin-left: 45px;
-        border-radius: 50%;
-        transition: 0.5s ease-in-out;
-        align-items: center;
-        justify-content: center;
-    }
-
-    header .navegation li a:hover {
-        transform: translateY(-10px);
-        background-color: rgb(0, 0, 0);
-        color: white;
-    }
-
-    header .navegation li img:hover {
-        filter: invert(1);
-    }
-
-    .container {
-        position: relative;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .icons {
-        position: absolute;
-        left: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .icons li {
-        list-style: none;
-    }
-
-    .icons li a {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        margin-left: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s ease-in-out;
-    }
-
-    .icons li a:hover {
-        transform: translateY(-10px);
-        background: yellow;
-
-    }
-
-    .icons li img {
-        filter: invert(1);
     }
 
     /* form {
@@ -182,7 +45,6 @@
     }
 
     .retornar {
-        padding-right: 480px;
         font-size: smaller;
         text-decoration: none;
     }
@@ -205,27 +67,42 @@
 
 <body>
     <section>
-        <header>
+        <!--CABEÇALHO-->
+      <header>
+      <section class="dominante"> 
+          <div class="angemessen">
             <h2 class="logo">ANGEMESSEN</h2>
-            <nav>
-                botão aqui
-            </nav>
+          </div>
+            <!--<div class="teste">
+              <form method="post" action="/enviar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit" class="search-btn"></button>
+            </form>-->
+          </div>
             <nav class="navegation">
-                <ul>
-                    <li><a href="#"><img src="../../img/icons8-shopping-trolley-24.png" width="30px" height="30px"></a></li>
-                    <li><a href="#"><img src="../../img/icons8-usuário-24.png" width="30px" height="30px"></a></li>
-                </ul>
+              <div class="banana">
+                <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
+                <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
+                <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
+                </div>
             </nav>
-        </header>
-
-        <form action="....php" method="post" class="teste">
+      </section>
+      <section class="recessiva">
+        <ul class="menu">
+          <li><a href="#">PRODUTOS</a></li>
+          <li><a href="#">COLEÇÕES</a></li>
+          <li><a href="#">SOBRE NÓS</a></li>
+          </ul>
+          </section>
+      </header>
+        <!--CONTEUDO PRINCIPAL-->
+      <section class="produtos">
 
             <h1>CRIAR CADASTRO</h1>
             <br><br>
-
             <div style="margin-top: 20px;">
-                <a class="retornar" href="url" style="color: #ffffff;">< RETORNAR </a><br>
-
+                <a class="retornar" href="url" style="color: #ffffff;"> < RETORNAR </a><br>
+            <form action="" method="post" class="teste"> <!-- form!! -->
                         <div class="Hmmmm">
                             <div class="img"><img src="../../Imagem/usuario.png" width="195px" height="195px" alt=""></div>
 
@@ -269,7 +146,7 @@
                         
                         <input href="Slide_10.html" type="submit" value="AVANÇAR >" id="avancar">
             </div>
-        </form>
+        </form> <!-- form!! -->
     </section>
     <footer>
         <ul class="icons">
