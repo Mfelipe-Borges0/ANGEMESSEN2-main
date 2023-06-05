@@ -113,20 +113,15 @@ header .navegation li {
 }
 
 .menu li:hover {
-    background-color: rgba(255, 255, 0, 0.37);
+    text-decoration: underline  ;
 }
 
 .menu li a {
     display: block;
     text-align: center;
-    color: #f8f0f0;
+    color: #000000;
     text-decoration: none;
 }
-
-.menu li a:hover {
-    color: #fff;
-}
-
 /*FIM CABEÇALHO*/
 
   /*SESSÃO DE CONTEUDO*/
@@ -146,7 +141,6 @@ header .navegation li {
     width: 100%;
     min-height: 100vh;
     padding-top: 115px;
-    padding-bottom: 115px;
     padding-left: 0;
     padding-right: 0 ;
     background-color: #fffdfd;
