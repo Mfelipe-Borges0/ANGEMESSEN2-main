@@ -21,7 +21,7 @@
                 <button type="submit" class="search-btn"></button>
             </form>-->
           </div>
-            <nav class="navegation">
+            <nav class="navegation"><div class=""></div>
               <div class="banana">
                 <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
                 <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
