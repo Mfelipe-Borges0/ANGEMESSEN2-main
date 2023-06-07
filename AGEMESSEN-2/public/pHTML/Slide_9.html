@@ -13,12 +13,9 @@
         color: #ffffff;
     }
 
-    /* form {
-        margin-top: 10%;
-    } */
-
     h1 {
         font-size: x-large;
+        margin-left: 188px;
     }
 
     .input_text {
@@ -33,25 +30,21 @@
         margin-bottom: 10px;
     }
 
-    .teste {
+    .test {
         margin-top: 10%;
     }
 
     #avancar {
-        margin-left: 520px;
+        font-size: 11px;
         background-color: #12121200;
         border: 1px double #12121200;
         color: white;
+        width: 188%;
     }
 
     .retornar {
-        font-size: smaller;
+        font-size: 11px;
         text-decoration: none;
-    }
-
-    .caixa_box {
-        display: flex;
-    justify-content: center;
     }
 
     .img {
@@ -68,93 +61,95 @@
 <body>
     <section>
         <!--CABEÇALHO-->
-      <header>
-      <section class="dominante"> 
-          <div class="angemessen">
-            <h2 class="logo">ANGEMESSEN</h2>
-          </div>
-            <!--<div class="teste">
+        <header>
+            <section class="dominante">
+                <div class="angemessen">
+                    <h2 class="logo">ANGEMESSEN</h2>
+                </div>
+                <!--<div class="teste">
               <form method="post" action="/enviar">
                 <input type="text" placeholder="Pesquisar...">
                 <button type="submit" class="search-btn"></button>
             </form>-->
-          </div>
-            <nav class="navegation">
-              <div class="banana">
-                <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
-                <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
-                <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
                 </div>
-            </nav>
-      </section>
-      <section class="recessiva">
-        <ul class="menu">
-          <li><a href="#">PRODUTOS</a></li>
-          <li><a href="#">COLEÇÕES</a></li>
-          <li><a href="#">SOBRE NÓS</a></li>
-          </ul>
-          </section>
-      </header>
+                <nav class="navegation">
+                    <div class="banana">
+                        <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"
+                                    height="24px"></a></div>
+                        <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"
+                                    height="24px"></a></div>
+                        <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px"
+                                    height="24px"></a></div>
+                    </div>
+                </nav>
+            </section>
+            <section class="recessiva">
+                <ul class="menu">
+                    <li><a href="#">PRODUTOS</a></li>
+                    <li><a href="#">COLEÇÕES</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                </ul>
+            </section>
+        </header>
         <!--CONTEUDO PRINCIPAL-->
-      <section class="produtos">
+        <section class="produtos">
+            <form action="" method="post" class="test"> <!-- form!! -->
+                <h1>CRIAR CADASTRO</h1>
+                <br><br>
+                <div style="margin-top: 20px;">
+                    <a class="retornar" href="url" style="color: #ffffff;"> &#10094; RETORNAR </a><br>
 
-            <h1>CRIAR CADASTRO</h1>
-            <br><br>
-            <div style="margin-top: 20px;">
-                <a class="retornar" href="url" style="color: #ffffff;"> &#10094; RETORNAR </a><br>
-            <form action="" method="post" class="teste"> <!-- form!! -->
-                        <div class="Hmmmm">
-                            <div class="img"><img src="../../Imagem/usuario.png" width="195px" height="195px" alt=""></div>
+                    <div class="Hmmmm">
+                        <div class="img"><img src="../../Imagem/usuario.png" width="195px" height="195px" alt=""></div>
 
-                            <div class="yuh">
-                                <label for="nome">
-                                    <input type="text" placeholder="Nome Completo" class="input_text" id="nome"
-                                        name="Nome" size="40" maxlength="50" required>
-                                </label>
-                                <br><br>
-                                <label for="email">
-                                    <input type="email" placeholder="E-mail" class="input_text" id="email" size="40"
-                                        maxlength="50" required>
-                                </label>
-                                <br><br>
-                                <label for="senha">
-                                    <input type="password" placeholder="Senha (8 dígitos)" name="Senha"
-                                        class="input_text" id="senha" size="40" maxlength="8" required>
-                                </label>
-                                <br><br>
-                                <label for="end">
-                                    <input type="password" placeholder="Confirme sua senha" name="Endereco"
-                                        class="input_text" id="end" size="40" maxlength="8" required>
-                                </label>
-                            </div>
+                        <div class="yuh">
+                            <label for="nome">
+                                <input type="text" placeholder="Nome Completo" class="input_text"
+                                    maxlength="50" name="nome" required>
+                            </label>
+                            <br><br>
+                            <label for="email">
+                                <input type="email" placeholder="E-mail" class="input_text" maxlength="50" name="email"
+                                    required>
+                            </label>
+                            <br><br>
+                            <label for="senha">
+                                <input type="password" placeholder="Senha (8 dígitos)" name="Senha" class="input_text"
+                                    maxlength="8" required>
+                            </label>
+                            <br><br>
+                            <label for="end">
+                                <input type="password" placeholder="Confirme sua senha" name="Endereco"
+                                    class="input_text" maxlength="8" required>
+                            </label>
                         </div>
-                        <br>
-
-                        <div class="caixa_box">
-                            <div>
-                                <label for="Caixa">
-                                    <input type="checkbox" name="Termo" class="termo" id="Caixa">
-                                    Li e aceito todos os <a href=""
-                                        style="text-decoration: none; color: rgb(67, 195, 255);">termos de uso</a>. <br>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="Receber_Email" class="receber_email" name="Caixa" checked>
-                                Aceito receber novidades e promoções por e-mail. <br><br>
-                                </label>
-                            </div>
+                    </div>
+                    <br>
+                    <div>
+                        <div>
+                            <label for="Caixa">
+                                <input type="checkbox" name="Termo" class="termo" id="Caixa">
+                                Li e aceito todos os <a href=""
+                                    style="text-decoration: none; color: rgb(67, 195, 255);">termos de uso</a>. <br>
                         </div>
-                        
-                        <input href="Slide_10.html" type="submit" value="AVANÇAR &#10095;" id="avancar">
-            </div>
-        </form> <!-- form!! -->
-    </section>
-    <footer>
-        <ul class="icons">
-            <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
-            <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
-            <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
-        </ul>
-    </footer>
+                        <div>
+                            <input type="checkbox" name="Receber_Email" class="receber_email" name="Caixa" checked>
+                            Aceito receber novidades e promoções por e-mail. <br><br>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input href="Slide_10.html" type="submit" value="AVANÇAR &#10095;" id="avancar">
+                </div>
+            </form> <!-- form!! -->
+        </section>
+        <footer>
+            <ul class="icons">
+                <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+                <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+                <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+            </ul>
+        </footer>
 </body>
 
 </html>
