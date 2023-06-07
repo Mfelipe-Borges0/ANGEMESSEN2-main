@@ -141,9 +141,10 @@ header .navegation li {
     width: 100%;
     min-height: 100vh;
     padding-top: 115px;
+    padding-bottom: 115px;
     padding-left: 0;
     padding-right: 0 ;
-    background-color: #fffdfd;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
