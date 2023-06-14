@@ -1,27 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
+.produtos{ /* FORMATAÇÃO STYLE --> correção*/
+    flex-direction: column;
 }
-.amostra{
+.father{
+    border-radius: 5px; ;
+    margin: 20px;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    min-height: 90vh;
+    background-color: grey;
+}
+.mother{
+    border-radius: 5px; ;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100px;
+    background-color: grey;
 }
 
-.imgball{
-    width: 50px;
-    height: 190px;
-}
 
-.collumn{
-display: flex;
-flex-direction: column;
-gap: 20px;
-}
-
-.miniball{
+.menuOpcoes{
+    width: 100%;
+    height: 100%;
     background-color: yellow;
-    width: 50px;
-    height: 50px;
+    margin-top: 0;
+    border-radius: 5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
-
-
+.bola{
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.runner{
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    border: none;
+    display: flex;
+    justify-content: left;
+}
+.preview{
+   
+}
+.hrinside{
+    width: 0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: brown;
+}
+.bola:active  .runner>hr{
+    width: 100%;
+    transition: 1s ease-in-out;
+}
