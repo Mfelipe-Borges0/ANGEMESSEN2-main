@@ -63,7 +63,12 @@
     border: none;
     background-color: brown;
 }
-.bola:active  .runner>hr{
+.bola:active + .runner > hr{
     width: 100%;
     transition: 1s ease-in-out;
+}
+.etapa{
+    width: 30px;
+    height: 10px;
+    color: white;
 }

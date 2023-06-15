@@ -155,6 +155,7 @@ header .navegation li {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex-direction: column;
 }
 
 /*FIM SESSÃO PRODUTOS*/
@@ -269,9 +270,7 @@ justify-content: center;
     width: 50%;
     height: 400px;
 }
-.cassolpersona{
 
-}
 body{
     background-color: rgba(0, 0, 0, 0.863);
 }
