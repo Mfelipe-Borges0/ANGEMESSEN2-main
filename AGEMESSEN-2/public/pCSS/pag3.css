@@ -141,7 +141,7 @@ header .navegation li {
     /* padding-bottom: 115px; */
     padding-left: 0;
     padding-right: 0 ;
-    background-color: #000000;
+    background-color: #151515;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,20 +217,50 @@ input[type="text"] {
 }
 
 .textoInovacao{
-    background-color: blue;
+    background-color: transparent;
     height:550px;
     width: 33.33%;
-
+}
+.inovacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: aliceblue;
+}
+.segundaInovacao{
+    margin-top: 15px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    max-width: 300px;
+    /*max-height: 350px; */
+    color: aliceblue;
 }
 .imagemPrincipal{
-    background-color: red;
+    background-color: transparent;
     height: 550px;
     width: 33.33%;
 }
 .textoChip{
-    background-color: green;
+    background-color: transparent;
     height: 550px;
     width: 33.33%;
-    
+    color: aliceblue;
 }
-
+.chip{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    color: aliceblue;
+}
+.segundoChip{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    text-align: justify;
+    max-width: 300px;
+    max-height: 350px;
+    color: aliceblue;
+}
