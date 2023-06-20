@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
+    <link rel="stylesheet" href="../pCSS/PopUp(Cadastro).css">
+    <title>Pop-up</title>
+</head>
+
+<body>
+    
+        <!--CABEÇALHO-->
+        <header>
+            <section class="dominante"> 
+                <div class="angemessen">
+                  <h2 class="logo">ANGEMESSEN</h2>
+                </div>
+                  <!--<div class="teste">
+                    <form method="post" action="/enviar">
+                      <input type="text" placeholder="Pesquisar...">
+                      <button type="submit" class="search-btn"></button>
+                  </form>-->
+                </div>
+                  <nav class="navegation">
+                    <div class="banana">
+                      <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"height="24px"></a></div>
+                      <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
+                      <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
+                      </div>
+                  </nav>
+            </section>
+            <section class="recessiva">
+              <ul class="menu">
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">COLEÇÕES</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
+                </ul>
+                </section>
+            </header>
+            </div>
+              <!--CONTEUDO PRINCIPAL-->
+            <section class="produtos">
+    <button onclick="openPopup()" style="margin-top: 60px;">Abrir Pop-up</button>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Descrição dos serviços: Os termos devem fornecer uma descrição clara dos produtos ou serviços oferecidos pelo e-commerce, incluindo informações sobre pagamento, entrega, política de devolução, entre outros.
+
+                        Registro e contas de usuário: Caso seja necessário criar uma conta de usuário para utilizar o e-commerce, os termos devem explicar o processo de registro, bem como as responsabilidades do usuário em relação às informações fornecidas e à segurança da conta.
+                        
+                        Direitos de propriedade intelectual: Os termos devem estabelecer que todo o conteúdo do e-commerce, como textos, imagens, logotipos e marcas registradas, são protegidos por direitos autorais e não podem ser reproduzidos ou utilizados sem autorização prévia.
+                        
+                        Responsabilidades do usuário: Os termos devem esclarecer as obrigações do usuário ao utilizar o e-commerce, incluindo a proibição de comportamentos ilegais, difamatórios, fraudulentos ou que violem os direitos de terceiros.
+                        
+                        Política de privacidade: Os termos devem fazer referência à política de privacidade da empresa, que explica como os dados pessoais dos usuários são coletados, armazenados e utilizados.
+                        
+                        Limitações de responsabilidade: Os termos devem estabelecer limitações de responsabilidade da empresa em caso de problemas técnicos, erros ou omissões no site, atrasos na entrega, entre outros eventos imprevistos.
+                        
+                        Cancelamento e devolução: Os termos devem explicar as condições e procedimentos para cancelamento de pedidos e devolução de produtos, bem como as políticas de reembolso.
+                        
+                        Disposições legais: Os termos devem indicar a legislação aplicável e a jurisdição competente em caso de litígios, bem como qualquer cláusula de arbitragem ou mediação, se aplicável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function openPopup() {
+                document.getElementById('popup').style.display = 'block';
+            }
+
+        function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+    </script>
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
