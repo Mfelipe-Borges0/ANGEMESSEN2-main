@@ -59,6 +59,15 @@
         .teste {
             margin-top: 10%;
         }
+
+        .btn,
+        .btn_c {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            margin-left: -30px;
+        }
     </style>
 </head>
 
@@ -105,28 +114,31 @@
                 <form action="" method="post" class="teste"> <!-- form!! -->
                     <div class="box">
                         <div>
-                            <div><label for="codigo">
-                                    <input type="text" placeholder="Código" class="input_text" id="codigo" name="Codigo"
+                            <!-- <div><label for="codigo">
+                                    <input type="tel" placeholder="Código" class="input_text" id="codigo" name="Codigo"
                                         maxlength="50" required>
                                 </label>
                                 <br><br>
-                            </div>
+                            </div> -->
                             <div><label for="nova_senha">
-                                    <input type="password" placeholder="Nova Senha (8 dígitos)" class="input_text"
-                                        id="nova_senha" name="Sova_Senha" maxlength="8" required>
+                                    <input type="password" placeholder="Nova Senha (12 dígitos)" class="input_text"
+                                        id="nova_senha" name="Sova_Senha" maxlength="12" id="senha" required>
+                                    <img src="../../img/Exibir_Olho.png" class="btn">
                                 </label>
                                 <br><br>
                             </div>
                             <div><label for="confirme_nova_senha">
                                     <input type="password" placeholder="Confirme Nova Senha" class="input_text"
-                                        id="confirme_nova_senha" name="Confirme_Nova_Senha" maxlength="8" required>
+                                        id="confirme_nova_senha" name="Confirme_Nova_Senha" maxlength="8"  required>
+                                    <img src="../../img/Exibir_Olho.png" class="btn_c">
                                 </label>
                                 <br><br>
                             </div>
                         </div>
                         <input href="google.com.br" type="submit" value="AVANÇAR >" id="avancar">
                         <div class="texto">
-                            <p class="citacao">"Ás vezes, você tem que esquecer o que você quer, para começar a entender o que você merece."</p>
+                            <p class="citacao">"Ás vezes, você tem que esquecer o que você quer, para começar a entender
+                                o que você merece."</p>
                             <p class="escritor">‒ Um usuário que
                                 esqueceu a senha do site</p>
                         </div>
@@ -134,6 +146,32 @@
                 </form> <!-- form!! -->
             </div>
         </section>
+        <script>
+            const senha = document.querySelector('#nova_senha');
+            const btn = document.querySelector('.btn');
+
+            btn.onclick = () => {
+                if (senha.type === 'password') {
+                    senha.type = 'text'
+                    btn.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    senha.type = 'password'
+                    btn.src = '../../img/Exibir_Olho.png'
+                }
+            }
+            const confirmar_senha = document.querySelector('#confirme_nova_senha');
+            const btn_c = document.querySelector('.btn_c');
+
+            btn_c.onclick = () => {
+                if (confirmar_senha.type === 'password') {
+                    confirmar_senha.type = 'text'
+                    btn_c.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    confirmar_senha.type = 'password'
+                    btn_c.src = '../../img/Exibir_Olho.png'
+                }
+            }
+        </script>
         <footer>
             <ul class="icons">
                 <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
