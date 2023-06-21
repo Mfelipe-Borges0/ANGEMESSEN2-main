@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../pCSS/amostra_produto.css">
     <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
+    <script src="../../../js/barra_pesquisa.js"></script>
     <title>Pagina inicial - angemessen</title>
 </head>
 <body>
@@ -31,29 +32,7 @@
                 <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"height="24px"></a></div>
                 <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
             </div>
-
-            <script>
-              function expande(){
-                var big = document.querySelector('#expande');
-                var barra = document.querySelector('#pesquisa');
-                console.log(big.clientWidth);
-
-                if(big.clientWidth != '410px'){
-
-                  big.style.width = '410px';
-                  barra.style.display = 'block';
-
-                  
-                  console.log('caiu no if');
-                  console.log(big.clientWidth);
-                  
-                }else{
-                  console.log(big.style.width);
-                  big.style.width = '130px';
-                  console.log(big.clientWidth);
-                }
-              }
-            </script>
+           
         </nav>
       </section>
       <section class="recessiva">
@@ -69,6 +48,7 @@
        
     <!--CONTEUDO PRINCIPAL-->
     <section class="produtos">
+
       <div class="mother">
         <div class="menuOpcoes">
             <div class="bola"></div>
@@ -82,14 +62,64 @@
             <div class="bola"></div>
         </div>
       </div>
+
       <div class="testando">
-        <img src="https://www.inove7.com.br/wp-content/uploads/2022/01/bola-branca.png" alt="" width="7px" height="7px">
-        <span class="etapa">ETAPA</span>
       </div>
-      
-      <div class="father">
+      <div class="flex">
+          <!-- <DIV class="filtro">  -->
+            <div class="teste001">
+              <div class="previa"><img src="../../img/bola.png" height="200px" width="200px"></div>
+              <div class="caixaspan">
+                <span class="spanprevia">material:</span>
+              <span class="spanprevia">tamanho:</span>
+              <span class="spanprevia">tema:</span> 
+              <span class="spanprevia">tecnologias:</span>
+              </div>
+              
 
+            </div>
+          <!-- </DIV> -->
+        
+        <div class="father">
+          <!-- <div class="titulo"><span class="estapa">ETAPA</span></div> -->
+          <div class="materias">
+            <div class="produto">
+              <img src="" alt="Produto 1">
+              <h2>Produto 1</h2>
+              <p>Preço: R$ 99,99</p>
+            </div>
 
+            <div class="produto">
+              <img src="" alt="Produto 2">
+              <h2>Produto 2</h2>
+              <p>Preço: R$ 149,99</p>
+            </div>
+
+            <div class="produto">
+              <img src="" alt="Produto 1">
+              <h2>Produto 1</h2>
+              <p>Preço: R$ 99,99</p>
+            </div>
+              
+            <div class="produto">
+              <img src="" alt="Produto 2">
+              <h2>Produto 2</h2>
+              <p>Preço: R$ 149,99</p>
+            </div>
+
+            <div class="produto">
+              <img src="" alt="Produto 1">
+              <h2>Produto 1</h2>
+              <p>Preço: R$ 99,99</p>
+            </div>
+              
+            <div class="produto">
+              <img src="" alt="Produto 2">
+              <h2>Produto 2</h2>
+              <p>Preço: R$ 149,99</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
