@@ -28,7 +28,11 @@ h1 {
     background-color: #12121200;
     border: 1px double #12121200;
     color: white;
-    width: 188%;
+    width: 150px;
+    height: 40px;
+    border-radius: 10%;
+    /*border: rgb(255, 255, 255) solid 1px;*/
+    font-size: small;
 }
 
 .retornar {
@@ -44,4 +48,13 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 55px;
+}
+
+.btn,
+.btn_c {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -30px;
 }

@@ -63,7 +63,8 @@
                     <label for="senha">
                         <!-- <span> Senha </span> -->
                         <input type="password" name="Senha" class="input_text" id="senha" placeholder="Senha" size="30"
-                            required>
+                        maxlength="12"  id="senha" required>
+                        <img src="../../img/Exibir_Olho.png" class="btn">
                     </label>
                 </div>
                 <a class="esqueci_senha" href="Slide_11.html">ESQUECI MINHA SENHA</a>
@@ -73,13 +74,28 @@
                 <span> Manter Conectado </span>
             </label>
             <br><br> -->
-                <input type="submit" value="Avançar >" id="avancar">
+                <input type="submit" value="Logar &#10095;" id="avancar">
                 <br><br>
             </form>
             <a class="Termos" href="url">TERMOS DE USO</a>
         </div>
     </section>
+    <script>
+        const senha = document.querySelector('#senha');
+        const btn = document.querySelector('.btn');
 
+        btn.onclick = () =>
+        {
+            if (senha.type === 'password')
+            {
+                senha.type = 'text'
+                btn.src = '../../img/Ocultar_Olho.png'
+            }else{
+                senha.type = 'password'
+                btn.src = '../../img/Exibir_Olho.png'
+            }
+        }
+    </script>
     <footer>
         <ul class="icons">
             <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
