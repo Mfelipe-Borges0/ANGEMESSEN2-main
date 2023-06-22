@@ -20,6 +20,7 @@
     background-color: grey;
     width: 50%;
     height: 90vh;
+    gap: 10px;
 }
 .son{
     display: flex;
@@ -32,8 +33,160 @@
 }
 .mini{
     display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: 70px;
+    gap: 15px;
+    
 }
+.minimini{
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    border-radius: 5px;
 }
+.stats{
+    width: 500px;
+    height: 500px;
+    
+
+}
+.big{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+.especifi{
+    width: 50%;
+    min-height: 90vh;
+}
+.kart{
+    width: 50%;
+    min-height: 90vh;
+}
+.titleespecifi{
+    width: 100%;
+    min-height:80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titleespecifispan{
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+    margin-left: 10px;
+}
+.avaliacao{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.avaliacaospan{
+    margin-left:10px ;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+.sale{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: pink;
+}
+.price{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.pricespan{
+    margin-left:10px ;
+}
+.promo{
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+}
+.promocao{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.promocaospan{
+    margin-left:10px ;
+}
+.ghostbox1{
+   width: 100%;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.ghostbox{
+    width: 100%;
+     height: 10px;
+     position: relative;
+     background-color: white;
+     display: flex;
+     align-items: center;
+ }
+
+.textpromo{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.promoP{
+    margin-left: 10px;
+}
+.secur{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.entrega{
+    width: 30%;
+    height: 100%;
+}
+.segu{
+    width: 30%;
+    height: 100%;
+}
+.pag{
+    width: 30%;
+    height: 100%;
+}
+.textsecur{
+    width: 100%;
+    height: 20px;
+}
+.textsecurspan{
+    font-size: 12px ;
+}
+
+
 
 #pesquisa[type="text"] {
     background: url(../../assets/lupa.svg) no-repeat center right;
@@ -43,8 +196,6 @@
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
     border-radius: 5px;
-
-
 }
 #pesquisa:focus{
     width: 300px;
