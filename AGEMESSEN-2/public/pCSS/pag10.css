@@ -64,3 +64,10 @@ div.box .input_text {
 .ccv_val {
     text-align: left;
 }
+
+#salvar{
+    width: 50%;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
