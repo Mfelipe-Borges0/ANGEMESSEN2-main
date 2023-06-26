@@ -40,20 +40,29 @@
             color: #ffffff;
         }
 
-        .citacao {
-            font-size: small;
-            padding: 40px 0 7px 0;
+        .avancar {
+            margin-top: 30px;
+            background: gold;
+            display: inline-flex;
+            padding: 0 0;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 100px;
+            border-radius: 20px;
+            border: transparent;
+            overflow: hidden;
+            height: 30px;
+            width: 150px;
+            text-transform: uppercase;
+            cursor: pointer;
         }
 
-        .escritor {
-            font-size: xx-small;
-        }
-
-        #avancar {
-            margin-left: 275px;
-            background-color: #12121200;
-            border: 1px double #12121200;
-            color: white;
+        .cancel {
+            background: transparent;
+            border: transparent;
+            color: rgb(255, 0, 0);
+            padding-top: 15px;
+            cursor: pointer;
         }
 
         .teste {
@@ -129,13 +138,34 @@
                                 <br><br>
                             </div>
                         </div>
-                        <input href="google.com.br" type="submit" value="CONFIRMAR >" id="avancar"><br>
-                        <input href="" type="" value="Cancelar" id="avancar">
+                        <input href="google.com.br" type="submit" value="CONFIRMAR  &#10095;" class="avancar"
+                            onmouseover="changeColor(this)" onmouseout="resetColor(this)"><br>
                     </div>
                 </form> <!-- form!! -->
+                <button class="cancel" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    | Cancelar |
+                </button>
             </div>
         </section>
         <script>
+
+            // Função para mudar a cor ao passar o mouse
+            function resetColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "gold";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "red";
+                }
+            }
+            // Função para resetar a cor ao remover o mouse
+            function changeColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "yellow";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "#B22222";
+                }
+            }
+
             const senha = document.querySelector('#nova_senha');
             const btn = document.querySelector('.btn');
 
