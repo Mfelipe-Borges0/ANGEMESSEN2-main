@@ -68,7 +68,7 @@
 .titleespecifi{
     width: 100%;
     min-height:80px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(22,22,22,1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@
 }
 .titleespecifispan{
     font-size: 20px;
-    color: rgb(5, 5, 5);
+    color: white;
     margin-left: 10px;
 }
 .avaliacao{
@@ -84,11 +84,11 @@
     align-items: center;
     width: 100%;
     height: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(22,22,22,1);
 }
 .avaliacaospan{
     margin-left:10px ;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 10px;
 }
 .sale{
@@ -96,43 +96,39 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    background-color: pink;
+    background-color: rgb(22,22,22,1);
 }
 .price{
     width: 100%;
     height: 20px;
     position: relative;
-    background-color: white;
+    background-color: rgb(22,22,22,1);;
     display: flex;
     align-items: center;
     font-size: 15px;
 }
 .pricespan{
     margin-left:10px ;
+    color: white;
 }
-.promo{
-    width: 100%;
-    height: 100px;
-    background-color: bisque;
-    display: flex;
-    align-items: center;
-}
+
 .promocao{
     width: 100%;
     height: 40px;
     position: relative;
-    background-color: white;
+    background-color: rgb(22,22,22,1);
     display: flex;
     align-items: center;
 }
 .promocaospan{
     margin-left:10px ;
+    color: white;
 }
 .ghostbox1{
    width: 100%;
     height: 20px;
     position: relative;
-    background-color: white;
+    background-color: rgb(22,22,22,1);
     display: flex;
     align-items: center;
 }
@@ -140,7 +136,7 @@
     width: 100%;
      height: 10px;
      position: relative;
-     background-color: white;
+     background-color: rgb(22,22,22,1);
      display: flex;
      align-items: center;
  }
@@ -149,7 +145,8 @@
     width: 100%;
     height: 20px;
     position: relative;
-    background-color: white;
+    color: white;
+    background-color: rgb(22,22,22,1);
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -158,10 +155,11 @@
     margin-left: 10px;
 }
 .secur{
+    gap: 10px;
     width: 100%;
     height: 100px;
     position: relative;
-    background-color: white;
+    background-color: rgb(22,22,22,1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,14 +167,22 @@
 .entrega{
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column ;
+    color: white;
+    align-items: center;
 }
 .segu{
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 .pag{
     width: 30%;
     height: 100%;
+    color: white;
 }
 .textsecur{
     width: 100%;
@@ -184,6 +190,36 @@
 }
 .textsecurspan{
     font-size: 12px ;
+}
+.almost{
+    gap: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.finish{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 90%;
+    height: 20%;
+    border-radius: 5px;
+
+}
+.throw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 90%;
+    height: 20%;
+    border-radius: 5px;
 }
 
 
