@@ -155,6 +155,7 @@
     margin-left: 10px;
 }
 .secur{
+    gap: 10px;
     width: 100%;
     height: 100px;
     position: relative;
@@ -169,6 +170,7 @@
     display: flex;
     flex-direction: column ;
     color: white;
+    align-items: center;
 }
 .segu{
     width: 30%;
