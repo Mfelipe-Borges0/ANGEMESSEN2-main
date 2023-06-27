@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
+    <title>Slide_11</title>
+    <style>
+        body {
+            background: url(Imagem/Degrade.jpg) no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: #ffffff;
+            font-family: system-ui;
+        }
+
+        h1 {
+            font-size: x-large;
+        }
+
+        h2 {
+            font-size: small;
+        }
+
+        .texto {
+            text-align: end;
+            width: 70%;
+        }
+
+        div.box .input_text {
+            padding: 10px 10px;
+            /* width: 350px; */
+            background-color: rgba(0, 0, 0, 0);
+            border-bottom: 1px double #ffffff;
+            border-top: 1px double #00000000;
+            border-left: 1px double #00000000;
+            border-right: 1px double #00000000;
+            color: #ffffff;
+        }
+
+        .citacao {
+            font-size: small;
+            padding: 40px 0 7px 0;
+        }
+
+        .escritor {
+            font-size: xx-small;
+        }
+
+        .avancar {
+            margin-top: 30px;
+            background: gold;
+            display: inline-flex;
+            padding: 0 0;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 120px;
+            border-radius: 20px;
+            border: transparent;
+            overflow: hidden;
+            height: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .cancel {
+            background: transparent;
+            border: transparent;
+            color: rgb(255, 0, 0);
+            padding-top: 15px;
+            cursor: pointer;
+        }
+
+        .teste {
+            margin-top: 10%;
+        }
+
+        .btn,
+        .btn_c {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            margin-left: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!--CABEÇALHO-->
+        <header>
+            <section class="dominante">
+                <div class="angemessen">
+                    <h2 class="logo">ANGEMESSEN</h2>
+                </div>
+                <!--<div class="teste">
+              <form method="post" action="/enviar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit" class="search-btn"></button>
+            </form>-->
+                </div>
+                <nav class="navegation">
+                    <div class="banana">
+                        <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px"
+                                    height="24px"></a></div>
+                        <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px"
+                                    height="24px"></a></div>
+                        <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px"
+                                    height="24px"></a></div>
+                    </div>
+                </nav>
+            </section>
+            <section class="recessiva">
+                <ul class="menu">
+                    <li><a href="#">PRODUTOS</a></li>
+                    <li><a href="#">COLEÇÕES</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                </ul>
+            </section>
+        </header>
+        <!--CONTEUDO PRINCIPAL-->
+        <section class="produtos">
+
+            <div class="teste">
+                <h1>INSIRA SEU E-MAIL</h1>
+                <p style="font-size: x-small;">ENVIAREMOS UM CÓDIGO PARA REDEFINIR SUA SENHA</p>
+                <br><br>
+                <form action="" method="post" class="teste"> <!-- form!! -->
+                    <div class="box">
+                        <div>
+                            <div><label for="codigo">
+                                    <input type="email" placeholder="E-mail" class="input_text" id="codigo"
+                                        name="Codigo" maxlength="50" required>
+                                </label>
+                                <br><br>
+                            </div>
+                        </div>
+                        <input href="google.com.br" type="submit" value="CONFIRMAR  &#10095;" class="avancar"
+                            onmouseover="changeColor(this)" onmouseout="resetColor(this)"><br>
+                    </div>
+                </form> <!-- form!! -->
+                <button class="cancel" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    | Cancelar |
+                </button>
+                <div class="texto">
+                    <p class="citacao">"Ás vezes, você tem que esquecer o que você quer, para começar a entender
+                        o que você merece."</p>
+                    <p class="escritor">‒ Um usuário que
+                        esqueceu a senha do site</p>
+                </div>
+            </div>
+        </section>
+        <script>
+
+            // Função para mudar a cor ao passar o mouse
+            function resetColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "gold";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "red";
+                }
+            }
+            // Função para resetar a cor ao remover o mouse
+            function changeColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "yellow";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "#B22222";
+                }
+            }
+
+            const senha = document.querySelector('#nova_senha');
+            const btn = document.querySelector('.btn');
+
+            btn.onclick = () => {
+                if (senha.type === 'password') {
+                    senha.type = 'text'
+                    btn.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    senha.type = 'password'
+                    btn.src = '../../img/Exibir_Olho.png'
+                }
+            }
+            const confirmar_senha = document.querySelector('#confirme_nova_senha');
+            const btn_c = document.querySelector('.btn_c');
+
+            btn_c.onclick = () => {
+                if (confirmar_senha.type === 'password') {
+                    confirmar_senha.type = 'text'
+                    btn_c.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    confirmar_senha.type = 'password'
+                    btn_c.src = '../../img/Exibir_Olho.png'
+                }
+            }
+        </script>
+        <footer>
+            <ul class="icons">
+                <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+                <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+                <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+            </ul>
+        </footer>
+</body>
+
+</html>

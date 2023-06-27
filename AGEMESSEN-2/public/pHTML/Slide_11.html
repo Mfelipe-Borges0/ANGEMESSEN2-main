@@ -40,24 +40,42 @@
             color: #ffffff;
         }
 
-        .citacao {
-            font-size: small;
-            padding: 40px 0 7px 0;
+        .avancar {
+            margin-top: 30px;
+            background: gold;
+            display: inline-flex;
+            padding: 0 0;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 100px;
+            border-radius: 20px;
+            border: transparent;
+            overflow: hidden;
+            height: 30px;
+            width: 150px;
+            text-transform: uppercase;
+            cursor: pointer;
         }
 
-        .escritor {
-            font-size: xx-small;
-        }
-
-        #avancar {
-            margin-left: 275px;
-            background-color: #12121200;
-            border: 1px double #12121200;
-            color: white;
+        .cancel {
+            background: transparent;
+            border: transparent;
+            color: rgb(255, 0, 0);
+            padding-top: 15px;
+            cursor: pointer;
         }
 
         .teste {
             margin-top: 10%;
+        }
+
+        .btn,
+        .btn_c {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            margin-left: -30px;
         }
     </style>
 </head>
@@ -99,41 +117,80 @@
         <section class="produtos">
 
             <div class="teste">
-                <h1>VEJA SEU E-MAIL</h1>
-                <p style="font-size: x-small;">DIGITE O CÓDIGO QUE ENVIAMOS PARA ELE</p>
+                <h1>INSIRA UMA NOVA SENHA</h1>
+                <p style="font-size: x-small;"></p>
                 <br><br>
                 <form action="" method="post" class="teste"> <!-- form!! -->
                     <div class="box">
                         <div>
-                            <div><label for="codigo">
-                                    <input type="text" placeholder="Código" class="input_text" id="codigo" name="Codigo"
-                                        maxlength="50" required>
-                                </label>
-                                <br><br>
-                            </div>
                             <div><label for="nova_senha">
-                                    <input type="password" placeholder="Nova Senha (8 dígitos)" class="input_text"
-                                        id="nova_senha" name="Sova_Senha" maxlength="8" required>
+                                    <input type="password" placeholder="Nova Senha (12 dígitos)" class="input_text"
+                                        id="nova_senha" name="Sova_Senha" maxlength="12" id="senha" required>
+                                    <img src="../../img/Exibir_Olho.png" class="btn">
                                 </label>
                                 <br><br>
                             </div>
                             <div><label for="confirme_nova_senha">
                                     <input type="password" placeholder="Confirme Nova Senha" class="input_text"
                                         id="confirme_nova_senha" name="Confirme_Nova_Senha" maxlength="8" required>
+                                    <img src="../../img/Exibir_Olho.png" class="btn_c">
                                 </label>
                                 <br><br>
                             </div>
                         </div>
-                        <input href="google.com.br" type="submit" value="AVANÇAR >" id="avancar">
-                        <div class="texto">
-                            <p class="citacao">"Ás vezes, você tem que esquecer o que você quer, para começar a entender o que você merece."</p>
-                            <p class="escritor">‒ Um usuário que
-                                esqueceu a senha do site</p>
-                        </div>
+                        <input href="google.com.br" type="submit" value="CONFIRMAR  &#10095;" class="avancar"
+                            onmouseover="changeColor(this)" onmouseout="resetColor(this)"><br>
                     </div>
                 </form> <!-- form!! -->
+                <button class="cancel" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    | Cancelar |
+                </button>
             </div>
         </section>
+        <script>
+
+            // Função para mudar a cor ao passar o mouse
+            function resetColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "gold";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "red";
+                }
+            }
+            // Função para resetar a cor ao remover o mouse
+            function changeColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "yellow";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "#B22222";
+                }
+            }
+
+            const senha = document.querySelector('#nova_senha');
+            const btn = document.querySelector('.btn');
+
+            btn.onclick = () => {
+                if (senha.type === 'password') {
+                    senha.type = 'text'
+                    btn.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    senha.type = 'password'
+                    btn.src = '../../img/Exibir_Olho.png'
+                }
+            }
+            const confirmar_senha = document.querySelector('#confirme_nova_senha');
+            const btn_c = document.querySelector('.btn_c');
+
+            btn_c.onclick = () => {
+                if (confirmar_senha.type === 'password') {
+                    confirmar_senha.type = 'text'
+                    btn_c.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    confirmar_senha.type = 'password'
+                    btn_c.src = '../../img/Exibir_Olho.png'
+                }
+            }
+        </script>
         <footer>
             <ul class="icons">
                 <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>

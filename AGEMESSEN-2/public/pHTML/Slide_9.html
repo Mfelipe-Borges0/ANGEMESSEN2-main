@@ -52,12 +52,12 @@
                     <a class="retornar" href="url" style="color: #ffffff;"> &#10094; RETORNAR </a><br>
 
                     <div class="Hmmmm">
-                        <div class="img"><img src="../../Imagem/usuario.png" width="195px" height="195px" alt=""></div>
+                        <div class="img"><img src="../../img/Usuario_+.png" width="235px" height="225px" alt=""></div>
 
                         <div class="yuh">
                             <label for="nome">
-                                <input type="text" placeholder="Nome Completo" class="input_text"
-                                    maxlength="50" name="nome" required>
+                                <input type="text" placeholder="Nome Completo" class="input_text" maxlength="50"
+                                    name="nome" required>
                             </label>
                             <br><br>
                             <label for="email">
@@ -66,13 +66,15 @@
                             </label>
                             <br><br>
                             <label for="senha">
-                                <input type="password" placeholder="Senha (8 dígitos)" name="Senha" class="input_text"
-                                    maxlength="8" required>
+                                <input type="password" placeholder="Senha (12 dígitos)" name="Senha" class="input_text"
+                                    id="senha" maxlength="12" required>
+                                <img src="../../img/Exibir_Olho.png" class="btn">
                             </label>
                             <br><br>
                             <label for="end">
                                 <input type="password" placeholder="Confirme sua senha" name="Endereco"
-                                    class="input_text" maxlength="8" required>
+                                    class="input_text" id="confirmar_senha" maxlength="12" required>
+                                <img src="../../img/Exibir_Olho.png" class="btn_c">
                             </label>
                         </div>
                     </div>
@@ -91,7 +93,7 @@
                         </div>
                     </div>
 
-                    <input href="Slide_10.html" type="submit" value="AVANÇAR &#10095;" id="avancar">
+                    <input href="#" type="submit" value="Cadastrar &#10095;" id="avancar">
                 </div>
             </form> <!-- form!! -->
         </section>
@@ -102,6 +104,35 @@
                 <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
             </ul>
         </footer>
+
+
+        <script>
+            const senha = document.querySelector('#senha');
+            const btn = document.querySelector('.btn');
+
+            btn.onclick = () => {
+                if (senha.type === 'password') {
+                    senha.type = 'text'
+                    btn.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    senha.type = 'password'
+                    btn.src = '../../img/Exibir_Olho.png'
+                }
+            }
+            const confirmar_senha = document.querySelector('#confirmar_senha');
+            const btn_c = document.querySelector('.btn_c');
+
+            btn_c.onclick = () => {
+                if (confirmar_senha.type === 'password') {
+                    confirmar_senha.type = 'text'
+                    btn_c.src = '../../img/Ocultar_Olho.png'
+                } else {
+                    confirmar_senha.type = 'password'
+                    btn_c.src = '../../img/Exibir_Olho.png'
+                }
+            }
+        </script>
+
 </body>
 
 </html>
