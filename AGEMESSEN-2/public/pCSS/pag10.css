@@ -65,9 +65,27 @@ div.box .input_text {
     text-align: left;
 }
 
-#salvar{
-    width: 50%;
-    margin-top: 50px;
+.avancar {
+    margin-top: 30px;
+    background: gold;
+    display: inline-flex;
+    padding: 0 0;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 120px;
+    width: 150px;
+    border-radius: 20px;
+    border: transparent;
+    overflow: hidden;
+    height: 30px;
+    text-transform: uppercase;
     cursor: pointer;
-    
+}
+
+.cancel {
+    background: transparent;
+    border: transparent;
+    color: rgb(255, 0, 0);
+    padding-top: 15px;
+    cursor: pointer;
 }

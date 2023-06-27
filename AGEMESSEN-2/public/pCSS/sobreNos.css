@@ -156,8 +156,8 @@ header .navegation li {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: black;
     background-image: url(../../Imagem/fundobasquete.jpg);
-    
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -252,6 +252,7 @@ footer {
     /* display: flex;
     justify-content: center;
     align-items: center; */
+   color: aliceblue;
 }
 
 .cassol1{
@@ -335,9 +336,9 @@ footer {
 
 .pagina3{
     display: flex;
-    background-color: #252525;
+    /* background-color: #252525; */
     margin: 0PX;
-    
+    background-color: transparent;
 }
 .textoInovacaoP3{
     background-color: transparent;
@@ -363,19 +364,29 @@ footer {
 .imagemPrincipalP3{
     background-color: transparent;
     height: 550px;
-    width: 33.33%;
+    /* width: 33.33%; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .textoChipP3{
     background-color: transparent;
     height: 550px;
     width: 33.33%;
-    color: aliceblue;
+    /* color: black; */
+
+}
+.fundochipP3{
+    background-color: aliceblue;
+    opacity: 80%;
+
 }
 .chipP3{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 70px;
-    color: aliceblue;
+    color: black;
+
 }
 .segundoChipP3{
     margin-top: 15px;
@@ -385,7 +396,8 @@ footer {
     text-align: justify;
     max-width: 300px;
     max-height: 350px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+
 }
 .pagina4{
     height: 500px;

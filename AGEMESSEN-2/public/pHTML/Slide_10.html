@@ -49,7 +49,7 @@
     </header>
     <!--CONTEUDO PRINCIPAL-->
     <form action="" method="post" class="test"> <!-- form!! -->
-    <section class="produtos">
+        <section class="produtos">
             <div class="teste">
                 <div class="column">
                     <div class="informacoes_comprador"><b>INFORMAÇÕES DO COMPRADOR</b></div>
@@ -62,7 +62,7 @@
 
 
                         <label class="input_formulario" for="sobrenome">
-                            <input type="text" class="input_text" name="Nome" maxlength="50" >
+                            <input type="text" class="input_text" name="Nome" maxlength="50">
                         </label>
                     </div>
 
@@ -164,9 +164,10 @@
                     </div>
 
                 </div>
-                <input href="#" type="submit" value="Salvar" id="salvar">
+                <input href="google.com.br" type="submit" value="CONFIRMAR  &#10095;" class="avancar"
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)"><br>
             </div>
-        </form> <!-- form!! -->
+    </form> <!-- form!! -->
     </section>
     <footer>
         <ul class="icons">
@@ -175,6 +176,25 @@
             <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
         </ul>
     </footer>
+    <script>
+
+        // Função para mudar a cor ao passar o mouse
+        function resetColor(element) {
+            if (element.classList.contains('avancar')) {
+                element.style.backgroundColor = "gold";
+            } else if (element.classList.contains('cancel')) {
+                element.style.color = "red";
+            }
+        }
+        // Função para resetar a cor ao remover o mouse
+        function changeColor(element) {
+            if (element.classList.contains('avancar')) {
+                element.style.backgroundColor = "yellow";
+            } else if (element.classList.contains('cancel')) {
+                element.style.color = "#B22222";
+            }
+        }
+    </script>
 </body>
 
 
