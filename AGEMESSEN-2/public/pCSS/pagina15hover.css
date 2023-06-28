@@ -1,9 +1,4 @@
-.produto:hover > img{
+.produto:hover > h2{
     
-    width: 50%;
-    height: 50%;
-    position: relative;
-    left: 20px;
-    left:0 ;
-   
+    display: none;
 }
