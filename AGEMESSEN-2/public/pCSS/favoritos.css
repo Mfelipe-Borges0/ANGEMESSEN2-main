@@ -242,10 +242,11 @@ footer {
     border-radius: 5px;
 }
 .nomeProduto{
-    margin-top: 7px;
+    margin-top: 15px;
 }
 .descProduto{
-    margin-top: 10px;
+    margin-top: 15px;
+
 }
 .textos{
     color: aliceblue;
