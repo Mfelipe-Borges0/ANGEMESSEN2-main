@@ -151,6 +151,7 @@ header .navegation li {
     padding-right: 0 ;
     background-color: #000000;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -215,4 +216,83 @@ footer {
     background-color: rgb(0, 0, 0);
 }
 
+.favoritos{
+    width: 97%;
+    height: 400px;
+    background-color: #202020;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.txtfav{
+    color: aliceblue;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 11px;
+    margin-left: 35px;
+}
+.produto{
+    width: 95%;
+    height: 150px;
+    background-color: #353535;
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+}
+.nomeProduto{
+    margin-top: 7px;
+}
+.descProduto{
+    margin-top: 10px;
+}
+.textos{
+    color: aliceblue;
+    width: 50%;
+}
+.separacao{
+    height: 100px;
+    width: 2px;
+    background-color: aliceblue;
+    margin-left: 20%;
+    display: flex;
+    margin-top: 25px;
+}
+.precos{
+    height: 150px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2%;
+    color: aliceblue;
+}
+.descontoProduto{
+    color: #FFA500;
+}
+.precoProduto{
+    opacity: 60%;
+}
+.comprar{
+    height: 60px;
+    width: 100%;
+    background-color: #FFA500;
+    border-radius: 5px;
 
+}
+.abaComprar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    margin-right: 20px;
+}
+.compra{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
