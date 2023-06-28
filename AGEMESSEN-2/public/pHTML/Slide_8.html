@@ -47,7 +47,7 @@
     <section class="produtos">
 
         <div class="teste">
-            <img class="imagem_perfil" src="../../Imagem/usuario.png" width="80px" height="80px" alt="">
+            <!-- <img class="imagem_perfil" src="../../Imagem/usuario.png" width="80px" height="80px" alt=""> -->
 
             <h1>ENTRE COM SUA CONTA</h1>
             <form action="....php" method="post" class="teste">
@@ -63,7 +63,7 @@
                     <label for="senha">
                         <!-- <span> Senha </span> -->
                         <input type="password" name="Senha" class="input_text" id="senha" placeholder="Senha" size="30"
-                        maxlength="12"  id="senha" required>
+                            maxlength="12" id="senha" required>
                         <img src="../../img/Exibir_Olho.png" class="btn">
                     </label>
                 </div>
@@ -74,23 +74,41 @@
                 <span> Manter Conectado </span>
             </label>
             <br><br> -->
-                <input type="submit" value="Logar &#10095;" id="avancar">
-                <br><br>
+                <button class="avancar" type="submit" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    <input href="#" type="submit" value="Cadastrar" class="confirmar">
+                    <img type="submit" class="arrow"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvt1MGJgjEYhOHHHgTvXrYHBW1H9irYiXgXLEQQaxC0AFlhW1ACCr+If5IPxYu5Jpk3M5mk482j82Z9X0A24UhEMyxxzKpTfQe/mGOPUQmk1kEPW/RxwACnNie1gKTVhOyuTp5CIoAbZI0ftEKigATpYpODtAHOJS1prElOhvhv7ns1IDXr7j4+GlFbQkX5J4GIg1TTogZFAFVvIAKYYHHt/hh/uaZFIppiVfIPRRzkDvwwH3FQBfkCsnFdABLMKBkZIo9PAAAAAElFTkSuQmCC" />
+                </button><br>
             </form>
             <a class="Termos" href="url">TERMOS DE USO</a>
         </div>
     </section>
     <script>
+        // Função para mudar a cor ao passar o mouse
+        function resetColor(element) {
+            if (element.classList.contains('avancar')) {
+                element.style.backgroundColor = "orange";
+            } else if (element.classList.contains('cancel')) {
+                element.style.color = "red";
+            }
+        }
+        // Função para resetar a cor ao remover o mouse
+        function changeColor(element) {
+            if (element.classList.contains('avancar')) {
+                element.style.backgroundColor = "gold";
+            } else if (element.classList.contains('cancel')) {
+                element.style.color = "#B22222";
+            }
+        }
+
         const senha = document.querySelector('#senha');
         const btn = document.querySelector('.btn');
 
-        btn.onclick = () =>
-        {
-            if (senha.type === 'password')
-            {
+        btn.onclick = () => {
+            if (senha.type === 'password') {
                 senha.type = 'text'
                 btn.src = '../../img/Ocultar_Olho.png'
-            }else{
+            } else {
                 senha.type = 'password'
                 btn.src = '../../img/Exibir_Olho.png'
             }
@@ -104,4 +122,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

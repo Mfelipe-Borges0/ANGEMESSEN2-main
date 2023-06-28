@@ -80,7 +80,7 @@
 
 
                         <label class="input_formulario" for="número_Cartão">
-                            <input type="text" class="input_text" name="Nome" maxlength="50" required>
+                            <input type="text" class="input_text" name="Nome" maxlength="50" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
                         </label>
                     </div>
                     <div class="linha_formulario">
@@ -98,7 +98,7 @@
 
                         <label class="input_formulario" for="val">
                             <input type="text" class="input_text" name="Nome" maxlength="5"
-                                placeholder="mês (mm)  /  ano (aa)" required>
+                                placeholder="xx/xx" pattern="[0-9]{2}/[0-9]{2}" required> 
                         </label>
                     </div>
                     <div class="linha_formulario">
@@ -138,7 +138,7 @@
 
                         <label class="input_formulario" for="telefone">
                             <input type="text" class="input_text" name="Nome" size="40" maxlength="50"
-                                style="margin-left: 30px" required>
+                                style="margin-left: 30px" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(XX) XXXXX-XXXX" required>
                         </label>
                     </div>
                     <div class="linha_formulario">
@@ -155,7 +155,7 @@
 
 
                         <label class="input_formulario" for="cep">
-                            <input type="text" class="input_text" name="Nome" size="40" maxlength="50" required>
+                            <input type="text" class="input_text" name="Nome" size="40" maxlength="50" pattern="[0-9]{5}-[0-9]{3}" required >
                         </label>
                     </div>
                     <div class="linha_formulario">
@@ -164,8 +164,11 @@
                     </div>
 
                 </div>
-                <input href="google.com.br" type="submit" value="CONFIRMAR  &#10095;" class="avancar"
-                onmouseover="changeColor(this)" onmouseout="resetColor(this)"><br>
+                <button class="avancar" type="submit" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    <input href="#" type="submit" value="Cadastrar" class="confirmar">
+                    <img type="submit" class="arrow"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvt1MGJgjEYhOHHHgTvXrYHBW1H9irYiXgXLEQQaxC0AFlhW1ACCr+If5IPxYu5Jpk3M5mk482j82Z9X0A24UhEMyxxzKpTfQe/mGOPUQmk1kEPW/RxwACnNie1gKTVhOyuTp5CIoAbZI0ftEKigATpYpODtAHOJS1prElOhvhv7ns1IDXr7j4+GlFbQkX5J4GIg1TTogZFAFVvIAKYYHHt/hh/uaZFIppiVfIPRRzkDvwwH3FQBfkCsnFdABLMKBkZIo9PAAAAAElFTkSuQmCC" />
+                </button><br>
             </div>
     </form> <!-- form!! -->
     </section>
@@ -181,7 +184,7 @@
         // Função para mudar a cor ao passar o mouse
         function resetColor(element) {
             if (element.classList.contains('avancar')) {
-                element.style.backgroundColor = "gold";
+                element.style.backgroundColor = "orange";
             } else if (element.classList.contains('cancel')) {
                 element.style.color = "red";
             }
@@ -189,7 +192,7 @@
         // Função para resetar a cor ao remover o mouse
         function changeColor(element) {
             if (element.classList.contains('avancar')) {
-                element.style.backgroundColor = "yellow";
+                element.style.backgroundColor = "gold";
             } else if (element.classList.contains('cancel')) {
                 element.style.color = "#B22222";
             }
