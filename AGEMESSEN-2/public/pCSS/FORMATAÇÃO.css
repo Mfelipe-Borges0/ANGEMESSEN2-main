@@ -152,6 +152,10 @@ header .navegation li {
     border-color:orange ;
     border-style: solid;
 }
+.menu li a:hover{
+    transform: scale(0.9);
+    transition:0.9s;
+}
 /*FIM CABEÇALHO*/
 
 
@@ -197,7 +201,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 230, 1);
+    background-color: #575757;
 }
 
 

@@ -84,21 +84,108 @@
 }
 .sizeselector{
 
+
 }
 .kart{
     width: 50%;
     height: 100%;
-    background-color: white;  
 }
 .itemtitle{
-    display: ;
-    align-items: center;
+    display: flex ;
     padding-left: 2%;
     padding-top: 2%;
     width: 100%;
-    height: 33.3%;
+    height: 28.3%;
+
 
 }
 .itemtitlespan{
     font-size: 20px;
+    color: white;
+}
+.avaliacaokart{
+    display: flex ;
+    align-items: center;
+    padding-left: 2%;
+    padding-top: 2%;
+    width: 100%;
+    height: 5%;
+}
+.precokart{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.columnprecokart{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+.titlepreco{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center ;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.titleprecospan{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.numberprecokart{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center ;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.opcaokart{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.finish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 80%;
+    height: 25%;
+    background-color: green;
+}
+.finished{
+    font-size: 15px;
+    font-weight: bold;
+}
+.notfinished{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 80%;
+    height: 25%;
+    background-color: orange;
+}
+.throw{
+    font-size: 15px;
+    font-weight: bold;
+}
+.ou{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
 }

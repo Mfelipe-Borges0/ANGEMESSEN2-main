@@ -1,0 +1,15 @@
+
+.finish{
+    opacity: 1;
+}
+.finish:hover{
+
+    opacity:0.7;
+
+}
+.notfinished{
+    opacity: 1;
+}
+.notfinished:hover{
+    opacity: 0.7;
+}
