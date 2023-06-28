@@ -150,11 +150,11 @@ header .navegation li {
     text-decoration: none;
     border: 1px;
     border-color:orange ;
-    border-style: solid;
+    /* border-style: solid; */
 }
 .menu li a:hover{
-    transform: scale(0.9);
-    transition:0.9s;
+    background-color: orange;
+    color: black;
 }
 /*FIM CABEÇALHO*/
 
