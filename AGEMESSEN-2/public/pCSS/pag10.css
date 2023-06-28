@@ -67,25 +67,39 @@ div.box .input_text {
 
 .avancar {
     margin-top: 30px;
-    background: gold;
+    background: orange;
     display: inline-flex;
     padding: 0 0;
     justify-content: space-around;
     align-items: center;
     min-width: 120px;
-    width: 150px;
     border-radius: 20px;
     border: transparent;
     overflow: hidden;
     height: 30px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     cursor: pointer;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+    width: 10%;
 }
 
-.cancel {
+.confirmar {
+    margin-top: 1px;
     background: transparent;
+    color: #000000;
+    padding: 0 0;
+    justify-content: space-between;
     border: transparent;
-    color: rgb(255, 0, 0);
-    padding-top: 15px;
+    /* text-transform: uppercase; */
     cursor: pointer;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    /* background-color: orange;
+    border-radius: 500%; */
 }
