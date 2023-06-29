@@ -1,6 +1,17 @@
 .produtos{ /* FORMATAÇÃO STYLE --> correção*/
     flex-direction: column;
 }
+.teste002{
+    display: none;
+    border: solid 1px green;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    width: 50%;
+    height: 10%;
+    background: none;
+}
 .father{
     border-radius: 5px; ;
     margin: 20px;
@@ -357,7 +368,6 @@ font-weight: bold;
         height: 300px;
         width:300px ;
     }
-    
     .produto img {
         width: 100%;
         height: 150px;
