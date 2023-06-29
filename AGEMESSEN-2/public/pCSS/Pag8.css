@@ -16,6 +16,7 @@ div.box .input_text {
 
 h1 {
     font-size: larger;
+    margin-bottom: 100px;
 }
 
 .criar {
@@ -45,12 +46,43 @@ h1 {
         margin-left: -200px;
     } */
 
-#avancar {
-    margin-left: 288px;
-    background-color: #12121200;
-    border: 1px double #12121200;
-    color: white;
-}
+    .avancar {
+        margin-top: 30px;
+        background: orange;
+        display: inline-flex;
+        padding: 0 0;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 120px;
+        border-radius: 20px;
+        border: transparent;
+        overflow: hidden;
+        height: 30px;
+        /* text-transform: uppercase; */
+        cursor: pointer;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif
+    }
+    
+    .confirmar {
+        margin-top: 1px;
+        background: transparent;
+        color: #000000;
+        padding: 0 0;
+        justify-content: space-between;
+        border: transparent;
+        /* text-transform: uppercase; */
+        cursor: pointer;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif
+    }
+    
+    .arrow {
+        width: 20px;
+        height: 20px;
+        /* background-color: orange;
+        border-radius: 500%; */
+    }
 
 .teste {
     margin-top: 8%;

@@ -46,54 +46,58 @@
         <!--CONTEUDO PRINCIPAL-->
         <section class="produtos">
             <form action="" method="post" class="test"> <!-- form!! -->
+                <a class="retornar" href="url" style="color: #ffffff;"> &#10094; RETORNAR </a><br>
                 <h1>CRIAR CADASTRO</h1>
                 <br><br>
                 <div style="margin-top: 20px;">
-                    <a class="retornar" href="url" style="color: #ffffff;"> &#10094; RETORNAR </a><br>
 
-                    <div class="Hmmmm">
-                        <div class="img"><img src="../../img/Usuario_+.png" width="235px" height="225px" alt=""></div>
 
-                        <div class="yuh">
-                            <label for="nome">
-                                <input type="text" placeholder="Nome Completo" class="input_text" maxlength="50"
-                                    name="nome" required>
-                            </label>
-                            <br><br>
-                            <label for="email">
-                                <input type="email" placeholder="E-mail" class="input_text" maxlength="50" name="email"
-                                    required>
-                            </label>
-                            <br><br>
-                            <label for="senha">
-                                <input type="password" placeholder="Senha (12 dígitos)" name="Senha" class="input_text"
-                                    id="senha" maxlength="12" required>
-                                <img src="../../img/Exibir_Olho.png" class="btn">
-                            </label>
-                            <br><br>
-                            <label for="end">
-                                <input type="password" placeholder="Confirme sua senha" name="Endereco"
-                                    class="input_text" id="confirmar_senha" maxlength="12" required>
-                                <img src="../../img/Exibir_Olho.png" class="btn_c">
-                            </label>
-                        </div>
+                    <!-- <div class="Hmmmm">
+                        <div class="img"><img src="../../img/Usuario_+.png" width="235px" height="225px" alt=""></div> -->
+
+                    <div class="yuh">
+                        <label for="nome">
+                            <input type="text" placeholder="Nome Completo" class="input_text" maxlength="50" name="nome"
+                                required>
+                        </label>
+                        <br><br>
+                        <label for="email">
+                            <input type="email" placeholder="E-mail" class="input_text" maxlength="50" name="email"
+                                required>
+                        </label>
+                        <br><br>
+                        <label for="senha">
+                            <input type="password" placeholder="Senha (12 dígitos)" name="Senha" class="input_text"
+                                id="senha" maxlength="12" required>
+                            <img src="../../img/Exibir_Olho.png" class="btn">
+                        </label>
+                        <br><br>
+                        <label for="end">
+                            <input type="password" placeholder="Confirme sua senha" name="Endereco" class="input_text"
+                                id="confirmar_senha" maxlength="12" required>
+                            <img src="../../img/Exibir_Olho.png" class="btn_c">
+                        </label>
                     </div>
-                    <br>
+                </div>
+                <br>
+                <div>
                     <div>
-                        <div>
-                            <label for="Caixa">
-                                <input type="checkbox" name="Termo" class="termo" id="Caixa" onclick="openPopup()">
-                                Li e aceito todos os <a href=""
-                                    style="text-decoration: none; color: rgb(67, 195, 255);">termos de uso</a>. <br>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="Receber_Email" class="receber_email" name="Caixa" checked>
-                            Aceito receber novidades e promoções por e-mail. <br><br>
-                            </label>
-                        </div>
+                        <label for="Caixa">
+                            <input type="checkbox" name="Termo" class="termo" id="Caixa" onclick="openPopup()">
+                            Li e aceito todos os <a href=""
+                                style="text-decoration: none; color: rgb(67, 195, 255);">termos de uso</a>. <br>
                     </div>
-
-                    <input href="#" type="submit" value="Cadastrar &#10095;" id="avancar">
+                    <div>
+                        <input type="checkbox" name="Receber_Email" class="receber_email" name="Caixa" checked>
+                        Aceito receber novidades e promoções por e-mail. <br><br>
+                        </label>
+                    </div>
+                </div>
+                <button class="avancar" type="submit" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    <input href="#" type="submit" value="Cadastrar" class="confirmar">
+                    <img type="submit" class="arrow"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvt1MGJgjEYhOHHHgTvXrYHBW1H9irYiXgXLEQQaxC0AFlhW1ACCr+If5IPxYu5Jpk3M5mk482j82Z9X0A24UhEMyxxzKpTfQe/mGOPUQmk1kEPW/RxwACnNie1gKTVhOyuTp5CIoAbZI0ftEKigATpYpODtAHOJS1prElOhvhv7ns1IDXr7j4+GlFbQkX5J4GIg1TTogZFAFVvIAKYYHHt/hh/uaZFIppiVfIPRRzkDvwwH3FQBfkCsnFdABLMKBkZIo9PAAAAAElFTkSuQmCC" />
+                </button><br>
                 </div>
             </form> <!-- form!! -->
         </section>
@@ -107,6 +111,23 @@
 
 
         <script>
+            // Função para mudar a cor ao passar o mouse
+            function resetColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "orange";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "red";
+                }
+            }
+            // Função para resetar a cor ao remover o mouse
+            function changeColor(element) {
+                if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "gold";
+                } else if (element.classList.contains('cancel')) {
+                    element.style.color = "#B22222";
+                }
+            }
+
             const senha = document.querySelector('#senha');
             const btn = document.querySelector('.btn');
 

@@ -48,9 +48,9 @@
       <button>*Historico</button>
       <div class="popup-wrapper">
         <div class="popup">
-          <div class="popup-close">&times;</div>
+          <div class="popup-close" onmouseover="changeColor(this)" onmouseout="resetColor(this)">&times;</div>
           <div class="popup-content">
-            <p>▏Não é possível !!▕</p>
+            <p>Não é possível !!</p>
             <p class="emoticon"><b>＼(º □ º l|l)/</b></p>
             <p style="padding: 2% 0 2% 0;">Parece que não há nenhuma compra!</p>
             <p><b>⤷</b><a class="link_de_popup" href="Slide_9.html"><b>Ir para o Catálogo!</b></a></p>
@@ -59,6 +59,23 @@
       </div>
   </section>
   <script>
+    // Função para mudar a cor ao passar o mouse
+    function resetColor(element) {
+      if (element.classList.contains('avancar')) {
+        element.style.backgroundColor = "orange";
+      } else if (element.classList.contains('popup-close')) {
+        element.style.color = "white";
+      }
+    }
+    // Função para resetar a cor ao remover o mouse
+    function changeColor(element) {
+      if (element.classList.contains('avancar')) {
+        element.style.backgroundColor = "gold";
+      } else if (element.classList.contains('popup-close')) {
+        element.style.color = "red";
+      }
+    }
+    
     const button = document.querySelector('button')
     const popupWrapper = document.querySelector('.popup-wrapper')
 

@@ -31,7 +31,7 @@
 
         div.box .input_text {
             padding: 10px 10px;
-            /* width: 350px; */
+            width: 60%;
             background-color: rgba(0, 0, 0, 0);
             border-bottom: 1px double #ffffff;
             border-top: 1px double #00000000;
@@ -51,7 +51,7 @@
 
         .avancar {
             margin-top: 30px;
-            background: gold;
+            background: orange;
             display: inline-flex;
             padding: 0 0;
             justify-content: space-around;
@@ -61,8 +61,30 @@
             border: transparent;
             overflow: hidden;
             height: 30px;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             cursor: pointer;
+            font-weight: 700;
+            font-family: 'Arial', sans-serif
+        }
+
+        .confirmar{
+            margin-top: 1px;
+            background: transparent;
+            color: #000000;
+            padding: 0 0;
+            justify-content: space-between;
+            border: transparent;
+            /* text-transform: uppercase; */
+            cursor: pointer;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif
+        }
+
+        .arrow{
+            width: 20px;
+            height: 20px;
+            /* background-color: orange;
+            border-radius: 500%; */
         }
 
         .cancel {
@@ -138,8 +160,10 @@
                                 <br><br>
                             </div>
                         </div>
-                        <input href="google.com.br" type="submit" value="CONFIRMAR  &#10095;" class="avancar"
-                            onmouseover="changeColor(this)" onmouseout="resetColor(this)"><br>
+                        <button class="avancar" type="submit" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                            <input href="Slide_11.2.html" type="submit" value="Confirmar" class="confirmar">
+                            <img type="submit" class="arrow"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvt1MGJgjEYhOHHHgTvXrYHBW1H9irYiXgXLEQQaxC0AFlhW1ACCr+If5IPxYu5Jpk3M5mk482j82Z9X0A24UhEMyxxzKpTfQe/mGOPUQmk1kEPW/RxwACnNie1gKTVhOyuTp5CIoAbZI0ftEKigATpYpODtAHOJS1prElOhvhv7ns1IDXr7j4+GlFbQkX5J4GIg1TTogZFAFVvIAKYYHHt/hh/uaZFIppiVfIPRRzkDvwwH3FQBfkCsnFdABLMKBkZIo9PAAAAAElFTkSuQmCC" />
+                        </button><br>
                     </div>
                 </form> <!-- form!! -->
                 <button class="cancel" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
@@ -158,7 +182,7 @@
             // Função para mudar a cor ao passar o mouse
             function resetColor(element) {
                 if (element.classList.contains('avancar')) {
-                    element.style.backgroundColor = "gold";
+                    element.style.backgroundColor = "orange";
                 } else if (element.classList.contains('cancel')) {
                     element.style.color = "red";
                 }
@@ -166,7 +190,7 @@
             // Função para resetar a cor ao remover o mouse
             function changeColor(element) {
                 if (element.classList.contains('avancar')) {
-                    element.style.backgroundColor = "yellow";
+                    element.style.backgroundColor = "gold";
                 } else if (element.classList.contains('cancel')) {
                     element.style.color = "#B22222";
                 }
