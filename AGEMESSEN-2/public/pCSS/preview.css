@@ -68,6 +68,7 @@
     justify-content: center;
     height: 10%;
     width: 100%;
+    background-color: rgb(37, 37, 37);
 }
 .personaspan{
     color: orange;
