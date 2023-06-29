@@ -1,4 +1,4 @@
-.produto:hover > h2{
-    
-    display: none;
+.produto:hover > .teste002{
+    display: flex;
+
 }
