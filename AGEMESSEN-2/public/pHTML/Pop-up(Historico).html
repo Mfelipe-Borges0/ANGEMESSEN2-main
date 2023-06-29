@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
+  <link rel="stylesheet" href="../pCSS/PopUp.css">
+  <title>Pop-up</title>
+</head>
+
+<body>
+
+  <!--CABEÇALHO-->
+  <header>
+    <section class="dominante">
+      <div class="angemessen">
+        <h2 class="logo">ANGEMESSEN</h2>
+      </div>
+      <!--<div class="teste">
+                    <form method="post" action="/enviar">
+                      <input type="text" placeholder="Pesquisar...">
+                      <button type="submit" class="search-btn"></button>
+                  </form>-->
+      </div>
+      <nav class="navegation">
+        <div class="banana">
+          <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px" height="24px"></a></div>
+          <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px" height="24px"></a></div>
+          <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px" height="24px"></a></div>
+        </div>
+      </nav>
+    </section>
+    <section class="recessiva">
+      <ul class="menu">
+        <li><a href="#">PRODUTOS</a></li>
+        <li><a href="#">COLEÇÕES</a></li>
+        <li><a href="#">SOBRE NÓS</a></li>
+      </ul>
+    </section>
+  </header>
+  </div>
+  <!--CONTEUDO PRINCIPAL-->
+  <section class="produtos">
+
+    <body>
+      <button>Histórico</button>
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="popup-close" onmouseover="changeColor(this)" onmouseout="resetColor(this)">&times;</div>
+          <div class="popup-content">
+            <p>Sinto muito, mas você não comprou nada ainda...</p>
+            <p class="emoticon"><b>(╥﹏╥)</b></p>
+            <p style="padding: 2% 0 2% 0;">Veja alguns de nossos produtos!</p>
+            <p><b>⤷</b><a class="link_de_popup" href="#"><b>Ir para o Catálogo</b></a></p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script>
+    // Função para mudar a cor ao passar o mouse
+    function resetColor(element) {
+      if (element.classList.contains('avancar')) {
+        element.style.backgroundColor = "orange";
+      } else if (element.classList.contains('popup-close')) {
+        element.style.color = "white";
+      }
+    }
+    // Função para resetar a cor ao remover o mouse
+    function changeColor(element) {
+      if (element.classList.contains('avancar')) {
+        element.style.backgroundColor = "gold";
+      } else if (element.classList.contains('popup-close')) {
+        element.style.color = "red";
+      }
+    }
+    
+    const button = document.querySelector('button')
+    const popupWrapper = document.querySelector('.popup-wrapper')
+
+    button.addEventListener('click', () => {
+      popupWrapper.style.display = 'block'
+    })
+
+    popupWrapper.addEventListener('click', event => {
+      const classNameOfClickedElement = event.target.classList[0];
+      console.log(classNameOfClickedElement)
+      const classNames = ['popup-close', 'popup-wrapper']
+      const closePopup = classNames.some(className => className === classNameOfClickedElement)
+
+      if (closePopup) {
+        popupWrapper.style.display = 'none'
+      }
+    })
+  </script>
+  <footer>
+    <ul class="icons">
+      <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+      <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+      <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
