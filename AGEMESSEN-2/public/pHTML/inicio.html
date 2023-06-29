@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../pCSS/inicio.css">
-  <title>Pagina inicial - angemessen</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pCSS/inicio.css">
+    <link rel="stylesheet" href="../../../node_modules/all-animation/dist/all-animation.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Pagina inicial - angemessen</title>
 </head>
 
-<body >
-  <div class="position">
-    <button class="botao">COMPRE!</button>
+<body>
+    <div class="position">
+        <div class="editBotao">
+            <a data-aos="fade" href="sobreNos.html" class="botao">COMPRE!</a>
+        </div>
 
-      
-      <video class="vid" id="video-background" autoplay muted loop >
-        <source src="../../Video/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4">
-      </video>
-  </div> 
+        <video class="vid" id="video-background" autoplay muted loop>
+            <source src="../../Video/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+        </video>
+    </div>
 
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
