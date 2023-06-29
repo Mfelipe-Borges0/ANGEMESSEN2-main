@@ -23,7 +23,7 @@ body, html {
   
   .botao {
     height: 50px;
-    width: 50px;
+    width: 150px;
     background-color: aliceblue;
     z-index: 2;
     position: absolute;
@@ -37,6 +37,7 @@ body, html {
     margin-left: auto; */
     border: 0; 
     color: black;
+    padding: 10px;
     
   }
   .editBotao{
