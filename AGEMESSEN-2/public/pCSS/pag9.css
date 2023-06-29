@@ -5,6 +5,9 @@ body {
 h1 {
     font-size: x-large;
     margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input_text {
@@ -83,4 +86,10 @@ h1 {
     cursor: pointer;
     position: absolute;
     margin-left: -30px;
+}
+
+.yuh{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
