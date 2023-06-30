@@ -229,7 +229,11 @@ footer {
     background-color: #252525;
     height: 500px;
     width: 100%;
+    display: flex;
+    
+    justify-content: center;
 }
+
 
 .textosP1 {
     height: 300px;
@@ -237,6 +241,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 20%;
 }
 
 .SobreNos {
@@ -258,15 +263,17 @@ footer {
     justify-content: center;
     align-items: center; */
    color: aliceblue;
+   
 }
 
 .cassol1 {
-    width: 32%;
-    margin-left: 800px;
-    margin-top: -22.8%;
+    width: 180%;
+    margin-left: 8px;
+    margin-top: 80%;
     display: flex;
     /* justify-content: center;
     align-items: center; */
+    
 }
 
 .pagina2 {
