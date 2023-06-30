@@ -13,6 +13,10 @@
     
 }
 
+.produtos{
+    background-color: #121212 !important; 
+}
+
 /* CABEÇALHO*/
 header {
     top: 0;
@@ -163,7 +167,7 @@ header .navegation li {
     /* background-image: url(../../Imagem/fundobasquete.jpg); */
     /* background-repeat: no-repeat;
     background-position: center center; */
-    background-color: #121212;
+    background-color: #121212; 
 
 }
 
@@ -359,7 +363,7 @@ footer {
 .pagina3 {
     display: flex;
     background-color: #121212;
-    margin: 0PX;
+    width: 100%;
     /* background-color: transparent; */
 }
 
@@ -422,7 +426,7 @@ footer {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     text-align: justify;
     max-width: 300px;
     max-height: 350px;
