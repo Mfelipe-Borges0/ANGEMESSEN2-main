@@ -1,0 +1,18 @@
+.principalcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    background-color: #000000;
+}
+.slide1{
+    width: 100%;
+    height: 25%;
+    background-color: white;
+}
+.frase{
+    width: 50%;
+    height: 40%;
+    background-color: white;
+}
