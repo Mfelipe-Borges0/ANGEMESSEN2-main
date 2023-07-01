@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/pCSS/FORMATAÇÃO.css">
+    <link rel="stylesheet" href="../../public/pCSS/Pag8.css">
+    <title>Autenticação</title>
+</head>
+
+<body>
+    <header>
+        <section class="dominante">
+            <div class="angemessen">
+                <h2 class="logo">ANGEMESSEN</h2>
+            </div>
+            <!--<div class="teste">
+            <form method="post" action="/enviar">
+              <input type="text" placeholder="Pesquisar...">
+              <button type="submit" class="search-btn"></button>
+          </form>-->
+            </div>
+
+            <nav class="navegation">
+                <div class="banana">
+                    <div class="icontoty"><a href="#"><img src="../../assets/lupa.svg" width="24px" height="24px"></a>
+                    </div>
+                    <div class="icontoty"><a href="#"><img src="../../assets/user.svg" width="24px" height="24px"></a>
+                    </div>
+                    <div class="icontoty"><a href="#"><img src="../../assets/carrinho.svg" width="24px"
+                                height="24px"></a></div>
+                </div>
+            </nav>
+        </section>
+        <section class="recessiva">
+            <ul class="menu">
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">COLEÇÕES</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
+            </ul>
+
+
+        </section>
+    </header>
+    <section class="produtos">
+
+        <div class="teste">
+            <!-- <img class="imagem_perfil" src="../../Imagem/usuario.png" width="80px" height="80px" alt=""> -->
+
+            <h1>ENTRE COM SUA CONTA</h1>
+            <form action="../php/login.php" method="post" class="teste">
+                <div class="box">
+                    <label for="email">
+                        <!-- <span> Usuário </span> -->
+                        <input type="email" name="email" class="input_text" id="email" placeholder="email"
+                            size="30" maxlength="50" required>
+                    </label>
+
+
+                    <br>
+                    <a class="criar" href="Slide_9.html">CRIAR CONTA</a>
+                    <br><br>
+                    <label for="senha">
+                        <!-- <span> Senha </span> -->
+                        <input type="senha" name="senha" class="input_text" id="senha" placeholder="Senha" size="30"
+                            maxlength="12" id="senha" required>
+                        <img src="../../img/Exibir_Olho.png" class="btn">
+                    </label>
+                </div>
+                    <a class="esqueci_senha" href="Slide_11.3.html">ESQUECI MINHA SENHA</a>
+                <br><br>
+
+                <button class="avancar" type="submit" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+                    <input href="#" type="submit" value="Cadastrar" class="confirmar">
+                    <img type="submit" class="arrow"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvt1MGJgjEYhOHHHgTvXrYHBW1H9irYiXgXLEQQaxC0AFlhW1ACCr+If5IPxYu5Jpk3M5mk482j82Z9X0A24UhEMyxxzKpTfQe/mGOPUQmk1kEPW/RxwACnNie1gKTVhOyuTp5CIoAbZI0ftEKigATpYpODtAHOJS1prElOhvhv7ns1IDXr7j4+GlFbQkX5J4GIg1TTogZFAFVvIAKYYHHt/hh/uaZFIppiVfIPRRzkDvwwH3FQBfkCsnFdABLMKBkZIo9PAAAAAElFTkSuQmCC" />
+                </button><br>
+            </form>
+            <a class="Termos" href="url">TERMOS DE USO</a>
+        </div>
+    </section>
+    <script>
+        // Função para mudar a cor ao passar o mouse
+        function resetColor(element) {
+            if (element.classList.contains('avancar')) {
+                element.style.backgroundColor = "orange";
+            } else if (element.classList.contains('cancel')) {
+                element.style.color = "red";
+            }
+        }
+        // Função para resetar a cor ao remover o mouse
+        function changeColor(element) {
+            if (element.classList.contains('avancar')) {
+                element.style.backgroundColor = "gold";
+            } else if (element.classList.contains('cancel')) {
+                element.style.color = "#B22222";
+            }
+        }
+
+        const senha = document.querySelector('#senha');
+        const btn = document.querySelector('.btn');
+
+        btn.onclick = () => {
+            if (senha.type === 'password') {
+                senha.type = 'text'
+                btn.src = '../../img/Ocultar_Olho.png'
+            } else {
+                senha.type = 'password'
+                btn.src = '../../img/Exibir_Olho.png'
+            }
+        }
+    </script>
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+            <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+            <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
