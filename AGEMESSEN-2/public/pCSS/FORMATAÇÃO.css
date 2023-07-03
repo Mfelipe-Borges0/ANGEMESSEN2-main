@@ -16,14 +16,12 @@
 
 
 /* CABEÇALHO*/
-header {
+body > header {
     top: 0;
     width: 100%;
     position: fixed;
     z-index: 10;
     display: block;
-
-
 }
 
 
