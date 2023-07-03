@@ -10,6 +10,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+.produtos{
+    background-color: #121212 !important; 
 }
 
 /* CABEÇALHO*/
@@ -152,17 +157,17 @@ header .navegation li {
     /* padding-bottom: 115px; */
     padding-left: 0;
     padding-right: 0;
-    background-color: #000000;
+    /* background-color: #121212; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: black;
-    background-image: url(../../Imagem/fundobasquete.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-
+    /* background-color: #121212; */
+    /* background-image: url(../../Imagem/fundobasquete.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: center center; */
+    background-color: #121212; 
 
 }
 
@@ -226,10 +231,14 @@ footer {
 }
 
 .pagina1 {
-    background-color: #252525;
+    background-color: #121212;
     height: 500px;
     width: 100%;
+    display: flex;
+    
+    justify-content: center;
 }
+
 
 .textosP1 {
     height: 300px;
@@ -237,6 +246,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 20%;
 }
 
 .SobreNos {
@@ -258,19 +268,21 @@ footer {
     justify-content: center;
     align-items: center; */
    color: aliceblue;
+   
 }
 
 .cassol1 {
-    width: 32%;
-    margin-left: 800px;
-    margin-top: -22.8%;
+    width: 180%;
+    margin-left: 8px;
+    margin-top: 80%;
     display: flex;
     /* justify-content: center;
     align-items: center; */
+    
 }
 
 .pagina2 {
-    background-color: #111111;
+    background-color: #121212;
     height: 500px;
     width: 100%;
 }
@@ -350,9 +362,9 @@ footer {
 
 .pagina3 {
     display: flex;
-    /* background-color: #252525; */
-    margin: 0PX;
-    background-color: transparent;
+    background-color: #121212;
+    width: 100%;
+    /* background-color: transparent; */
 }
 
 .textoInovacaoP3 {
@@ -392,10 +404,11 @@ footer {
     height: 550px;
     width: 33.33%;
     /* color: black; */
-
+    
 }
 .fundochipP3{
-    background-color: aliceblue;
+    background-color: transparent;
+    color: aliceblue;
     opacity: 80%;
 
 }
@@ -406,25 +419,25 @@ footer {
     align-items: center;
     margin-top: 70px;
     color: black;
-
+    color: aliceblue;
 }
 
 .segundoChipP3 {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     text-align: justify;
     max-width: 300px;
     max-height: 350px;
     color: rgb(0, 0, 0);
-
+    color: aliceblue;
 }
 
 .pagina4 {
     height: 500px;
     width: 100%;
-    background-color: #303030;
+    background-color: #121212;
     display: flex;
 }
 
@@ -437,11 +450,13 @@ footer {
     align-items: center;
     justify-content: center;
     /* background-color: aquamarine; */
+    color: aliceblue;
 }
 
 .txt2P4 {
     height: 500px;
     width: 50%;
+    color: aliceblue;
 }
 
 .titulo2P4 {
@@ -450,15 +465,17 @@ footer {
     justify-content: center;
     margin-top: 90px;
     padding: 20px;
+    color: aliceblue;
 }
 .textoP4{
     text-align: center;
+    color: aliceblue;
 }
 
 .pagina5{
     height: 500px;
     width: 100%;
-    background-color: #252525;
+    background-color: #121212;
 }
 
 .contato{

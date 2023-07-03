@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="../../public/pCSS/FORMATAÇÃO.css">
+    <link rel="stylesheet" href="../pCSS/Css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section>
+        <!--CABEÇALHO-->
+        <header>
+            <section class="dominante">
+                <div class="angemessen">
+                    <h2 class="logo">ANGEMESSEN</h2>
+                </div>
+                <!--<div class="teste">
+                  <form method="post" action="/enviar">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button type="submit" class="search-btn"></button>
+                </form>-->
+                </div>
+                <nav class="navegation">
+                    <div class=""></div>
+                    <div class="banana">
+                        <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
+                                    style="color: orange; font-size: 22px;"></i></a></div>
+                        <div class="icontoty"><a href="#"><i class='bx bxs-user'
+                                    style="color: orange; font-size: 22px;"></i></a></div>
+                        <div class="icontoty"><a href="#"><i class='bx bxs-cart'
+                                    style="color: orange; font-size: 22px;"></i></a></div>
+                    </div>
+                </nav>
+            </section>
+            <section class="recessiva">
+                <ul class="menu">
+                    <li><a href="#">PRODUTOS</a></li>
+                    <li><a href="#">COLEÇÕES</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                </ul>
+            </section>
+        </header>
+        <section class="produtos">
+            <main>
+                <div class="page-title">Seu Carrinho</div>
+                <div class="content">
+                    <section>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Preço</th>
+                                    <th>Quantidade</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product">
+                                            <img src="https://picsum.photos/100/120" alt="">
+                                            <div class="info">
+                                                <div class="name">Nome do Produto</div>
+                                                <div class="category">Categoria</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 120</td>
+                                    <td>
+                                        <div class="qty">
+                                            <button><i class='bx bx-minus'
+                                                style="color: white;"></i></button>
+                                            <span>2</span>
+                                            <button><i class='bx bx-plus'
+                                                style="color: white;"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>R$ 240</td>
+                                    <td>
+                                        <button class="remove"><i class='bx bx-x' 
+                                            style="color: white;"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product">
+                                            <img src="https://picsum.photos/100/120" alt="">
+                                            <div class="info">
+                                                <div class="name">Nome do Produto</div>
+                                                <div class="category">Categoria</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 120</td>
+                                    <td>
+                                        <div class="qty">
+                                            <button><i class='bx bx-minus'
+                                                style="color: white;"></i></button>
+                                            <span>2</span>
+                                            <button><i class='bx bx-plus' 
+                                                style="color: white;"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>R$ 240</td>
+                                    <td>
+                                        <button class="remove"><i class='bx bx-x'
+                                            style="color: white;"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product">
+                                            <img src="https://picsum.photos/100/120" alt="">
+                                            <div class="info">
+                                                <div class="name">Nome do Produto</div>
+                                                <div class="category">Categoria</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 120</td>
+                                    <td>
+                                        <div class="qty">
+                                            <button><i class='bx bx-minus'
+                                                style="color: white;"></i></button>
+                                            <span>2</span>
+                                            <button><i class='bx bx-plus'
+                                                style="color: white;"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>R$ 240</td>
+                                    <td>
+                                        <button class="remove"><i class='bx bx-x'
+                                            style="color: white;"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <aside>
+                        <div class="box">
+                            <header class="resumo_title">Resumo da compra</header>
+                            <div class="info">
+                                <div><span>Sub-total</span><span>R$ 418</span></div>
+                                <div><span>Frete</span><span>Gratuito</span></div>
+                                <div>
+                                    <button>
+                                        Adicionar cupom de desconto
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <footer>
+                                <span>Total</span>
+                                <span>R$ 418</span>
+                            </footer>
+                        </div>
+                        <button>Finalizar Compra</button>
+                    </aside>
+                </div>
+            </main>
+        </section>
+        <footer>
+            <ul class="icons">
+                <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+                <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="30px" height="30px"></a></li>
+                <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+            </ul>
+        </footer>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 .produto:hover > .teste002{
     display: flex;
+    padding: 10px;
 
 }

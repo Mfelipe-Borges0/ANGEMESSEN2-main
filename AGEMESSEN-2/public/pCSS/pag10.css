@@ -2,7 +2,6 @@ body{
     color: #ffffff;
 }
 .teste {
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -53,6 +52,9 @@ div.box .input_text {
 .informacoes_comprador {
     font-size: 25px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .endereco_mudanca {
@@ -102,4 +104,9 @@ div.box .input_text {
     height: 20px;
     /* background-color: orange;
     border-radius: 500%; */
+}
+
+.produtos{
+    padding-top: 160px;
+    padding-bottom: 60px;
 }
