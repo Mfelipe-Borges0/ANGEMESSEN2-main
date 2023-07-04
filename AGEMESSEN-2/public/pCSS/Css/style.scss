@@ -3,8 +3,12 @@
     padding: 0;
 }
 
+body {
+    color: white;
+}
+
 main {
-    background: black;
+    background-color: black;
     padding: 0 30px 30px;
     color: white;
 
@@ -202,14 +206,14 @@ aside {
     }
 }
 
-.resumo_title{
+.resumo_title {
     padding-top: 10px;
     display: flex;
     justify-content: center;
 }
 
-.produtos{
+.produtos {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
-    display:block !important; 
+    display: block !important;
 }
