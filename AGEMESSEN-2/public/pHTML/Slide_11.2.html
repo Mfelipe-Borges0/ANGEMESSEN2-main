@@ -134,13 +134,49 @@
                         <div class="icontoty"><a href="#"><i class='bx bxs-cart'
                                     style="color: orange; font-size: 22px;"></i></a></div>
                     </div>
+                    <!-- Menu Horizontal -->
+          <div class="header_botoes">
+            <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
+                        style="color: orange; font-size: 22px;"></i></a></div>
+            <div class="icontoty"><a href="#"><i class='bx bxs-user' style="color: orange; font-size: 22px;"
+                        onclick="abrirMenu()"></i></a></div>
+            <div class="icontoty"><a href="../../public/pHTML/pag_carrinho.html"><i class='bx bxs-cart'
+                        style="color: orange; font-size: 22px;"></i></a></div>
+        </div>
+        <!-- Menu Lateral -->
+        <div class="side_nav" id="menulat">
+            <a href="#" onclick="fecharMenu()" style="gap: 15px; font-size: small;">Fechar <i 
+                class='bx bx-x' style="font-size: 15px; display:flex; align-items: center;">
+            </i></a>
+            <span style="justify-content: center;">
+                Xxxx Xxxx Xxxx
+            </span>
+            <span style="font-size: smaller; color: orange; justify-content: center;">
+                | Membro desde xx/xx/xx |
+            </span>
+            <a href="../../public/pHTML/favoritos.html" class="config_menu_lat">Favoritos <p>|</p> <i class='bx bxs-heart'></i></a>
+            <a href="#" class="config_menu_lat">Histórico <p>|</p> <i class='bx bx-history'></i></a>
+            <a href="#" class="config_menu_lat">Configurações <p>|</p> <i class='bx bxs-cog'></i></a>
+            <a href="../../img/termos.pdf" class="config_menu_lat">Termos de Uso <p>|</p> <i class='bx bxs-conversation'></i></a>
+            
+        </div>
+        <!--menu lateral script-->
+        <script>
+          function abrirMenu(){
+            document.getElementById('menulat').style.width = '250px';
+          }
+
+          function fecharMenu(){
+            document.getElementById('menulat').style.width = '0px';
+          }
+        </script>
                 </nav>
             </section>
             <section class="recessiva">
                 <ul class="menu">
-                    <li><a href="secao_produtos.html">PRODUTOS</a></li>
-                    <li><a href="#">COLEÇÕES</a></li>
-                    <li><a href="teste_sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="../../public/pHTML/secao_produtos.html">PRODUTOS</a></li>
+                <li><a href="../../public/pHTML/colecoes.html">COLEÇÕES</a></li>
+                <li><a href="../../public/pHTML/teste_sobrenos.html">SOBRE NÓS</a></li>
                 </ul>
             </section>
         </header>
@@ -222,9 +258,15 @@
         </script>
         <footer>
             <ul class="icons">
-                <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
-                <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
-                <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+                <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                <span><b>|</b></span>
+                <li><a href="#"><i class='bx bxl-facebook-square'></i></i></a></li>
+                <span><b>|</b></span>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                <span><b>|</b></span>
+                <li><a href="#"><i class='bx bxs-phone'></i><b>(47)5050-4747</b></a></li>
+                <span><b>|</b></span>
+                <li><a href="#"><i class='bx bxs-envelope'></i><b>angemessen_oficial@gmail.com</b></a></li>
             </ul>
         </footer>
 </body>

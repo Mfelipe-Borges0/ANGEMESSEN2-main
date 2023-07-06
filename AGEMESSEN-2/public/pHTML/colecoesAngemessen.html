@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="../../public/pCSS/pagina15.css">
+  <link rel="stylesheet" href="../../public/pCSS/FORMATAÇÃO.css">
+  <link rel="stylesheet" href="../../public/pCSS/pagina15hover.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../pCSS/Css/style.css">
+  <script src="../pJS/FORMATAÇÃO.js"></script>
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pCSS/pagina15.css">
+    <title>Pagina de Produtos - angemessen</title>
+</head>
+<body>
+    
+        <!--CABEÇALHO-->
+  <header>
+    <section>
+      <!--CABEÇALHO-->
+      <header>
+          <section class="dominante">
+              <div class="angemessen">
+                  <h2 class="logo">ANGEMESSEN</h2>
+              </div>
+              <nav class="navegation">
+                  <div class="header_botoes">
+                      <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
+                                  style="color: orange; font-size: 22px;"></i></a></div>
+                      <div class="icontoty"><a href="#"><i class='bx bxs-user'
+                                  style="color: orange; font-size: 22px;"></i></a></div>
+                      <div class="icontoty"><a href="pag_carrinho.html"><i class='bx bxs-cart'
+                                  style="color: orange; font-size: 22px;"></i></a></div>
+                  </div>
+                  <!-- Menu Horizontal -->
+          <div class="header_botoes">
+            <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
+                        style="color: orange; font-size: 22px;"></i></a></div>
+            <div class="icontoty"><a href="#"><i class='bx bxs-user' style="color: orange; font-size: 22px;"
+                        onclick="abrirMenu()"></i></a></div>
+            <div class="icontoty"><a href="../../public/pHTML/pag_carrinho.html"><i class='bx bxs-cart'
+                        style="color: orange; font-size: 22px;"></i></a></div>
+        </div>
+        <!-- Menu Lateral -->
+        <div class="side_nav" id="menulat">
+            <a href="#" onclick="fecharMenu()" style="gap: 15px; font-size: small;">Fechar <i 
+                class='bx bx-x' style="font-size: 15px; display:flex; align-items: center;">
+            </i></a>
+            <span style="justify-content: center;">
+                Xxxx Xxxx Xxxx
+            </span>
+            <span style="font-size: smaller; color: orange; justify-content: center;">
+                | Membro desde xx/xx/xx |
+            </span>
+            <a href="../../public/pHTML/favoritos.html" class="config_menu_lat">Favoritos <p>|</p> <i class='bx bxs-heart'></i></a>
+            <a href="#" class="config_menu_lat">Histórico <p>|</p> <i class='bx bx-history'></i></a>
+            <a href="#" class="config_menu_lat">Configurações <p>|</p> <i class='bx bxs-cog'></i></a>
+            <a href="../../img/termos.pdf" class="config_menu_lat">Termos de Uso <p>|</p> <i class='bx bxs-conversation'></i></a>
+            
+        </div>
+        <!--menu lateral script-->
+        <script>
+          function abrirMenu(){
+            document.getElementById('menulat').style.width = '250px';
+          }
+
+          function fecharMenu(){
+            document.getElementById('menulat').style.width = '0px';
+          }
+        </script>
+              </nav>
+          </section>
+          <section class="recessiva">
+              <ul class="menu">
+                <li><a href="../../public/pHTML/secao_produtos.html">PRODUTOS</a></li>
+                <li><a href="../../public/pHTML/colecoes.html">COLEÇÕES</a></li>
+                <li><a href="../../public/pHTML/teste_sobrenos.html">SOBRE NÓS</a></li>
+              </ul>
+          </section>
+  </header>
+        
+      <!--CONTEUDO PRINCIPAL-->
+  <section class="produtos">
+    <div class="flex">
+      <!-- <DIV class="filtro">  -->
+
+    <div class="father">
+        <!-- <div class="titulo"><span class="estapa">ETAPA</span></div> -->
+      <div class="materias">
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bolafutebol.png" alt="Produto 1"></div>
+          <h2>bola de futebol angemessen (copa do mundo)</h2>
+          <p>R$ 99,99</p>
+          <button class="teste002" type="submit">COMPRAR</button>
+          
+        </div>
+        
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bolafutebol.png" alt="Produto 1"></div>
+          <h2>Produto 2 Angemessen</h2>
+          <p>R$ 149,99</p>
+          <button class="teste002">COMPRAR</button>
+        </div>
+        
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bolabasquete.png" alt="Produto 1"></div>
+          <h2>bola de basquete angemessen (natalina)</h2>
+          <p>R$ 99,99</p>
+          <button class="teste002">COMPRAR</button>
+        </div>
+                      
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bola.png" alt="Produto 1"></div>
+          <h2>bola Angemessen (premium) </h2>
+          <p>R$ 149,99</p>
+          <button class="teste002" >COMPRAR</button>
+        </div>
+        
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bolabasquete.png" alt="Produto 1"></div>
+          <h2>bola de futebol Angemessen (all stars)</h2>
+          <p>R$ 99,99</p>
+          <button class="teste002">COMPRAR</button>
+        </div>
+                      
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bolabol.png" alt="Produto 1"></div>
+            <h2>bola de baseball Angemessen (base)</h2>
+            <p>R$ 149,99</p>
+            <button class="teste002">COMPRAR</button>
+        </div>
+
+        <div class="produto">
+          <div class="imagem"><img src="../../img/futebolamericano.png" alt="Produto 1"></div>
+            <h2>bola de futebol americano Angemessen(base)</h2>
+            <p>R$ 149,99</p>
+            <button class="teste002">COMPRAR</button>
+        </div>
+
+        <div class="produto">
+          <div class="imagem"><img src="../../img/bolahalloween.png " alt="Produto 1"></div>
+            <h2>bola de futebol Angemessen (halloween)</h2>
+            <p>R$ 149,99</p>
+            <button class="teste002">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+        </section>
+    <footer>
+      <ul class="icons">
+        <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+        <span><b>|</b></span>
+        <li><a href="#"><i class='bx bxl-facebook-square'></i></i></a></li>
+        <span><b>|</b></span>
+        <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+        <span><b>|</b></span>
+        <li><a href="#"><i class='bx bxs-phone'></i><b>(47) 5050-4747</b></a></li>
+        <span><b>|</b></span>
+        <li><a href="#"><i class='bx bxs-envelope'></i><b>angemessen_oficial@gmail.com</b></a></li>
+    </ul>
+    </footer> 
+</body>
+</html>
+
+
+
