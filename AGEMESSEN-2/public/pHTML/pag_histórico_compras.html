@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="../../public/pCSS/FORMATAÇÃO.css">
-    <link rel="stylesheet" href="../pCSS/Css/style.css">
+    <link rel="stylesheet" href="../pCSS/historico.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -59,21 +59,19 @@
         </header>
         <section class="produtos">
             <main>
-                <div class="page-title">Seu Carrinho</div>
+                <div class="page-title">Seu Histórico de Compras</div>
                 <div class="content">
                     <section>
                         <table>
-                            <thead>
-                                <tr>
-                                    <th>Produto</th>
-                                    <th>Preço</th>
-                                    <th>Quantidade</th>
-                                    <th>Total</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
+                                    <td>
+                                        <div>
+                                            <span style="color: orange; font-size: 22px;">28 de Junho de 2023</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="historic_products">
                                     <td>
                                         <div class="product">
                                             <img src="../../img/bolabasquete.png" alt="" width="70px">
@@ -85,41 +83,45 @@
                                     </td>
                                     <td>R$ 120</td>
                                     <td>
-                                        <div class="qty">
-                                            <button><i class='bx bx-minus' style="color: white;"></i></button>
-                                            <span>2</span>
-                                            <button><i class='bx bx-plus' style="color: white;"></i></button>
+                                        <div class="">
+                                            <p style="color: #aaa;">Características</p>
                                         </div>
                                     </td>
-                                    <td>R$ 240</td>
-                                    <td>
-                                        <button class="remove"><i class='bx bx-x' style="color: white;"></i></button>
-                                    </td>
+                                    <td style="color: lawngreen;">À Caminho!!</td>
                                 </tr>
                                 <tr>
+                                    <td>
+                                        <div>
+                                            <span style="color: orange; font-size: 22px;">03 de Julho de 2023</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="historic_products">
                                     <td>
                                         <div class="product">
                                             <img src="../../img/bolafutebol.png" alt="" width="70px">
                                             <div class="info">
                                                 <div class="name">Bola de Futebol - (padrão)</div>
-                                                <div class="category">Futebolo</div>
+                                                <div class="category">Futebol</div>
                                             </div>
                                         </div>
                                     </td>
                                     <td>R$ 120</td>
                                     <td>
-                                        <div class="qty">
-                                            <button><i class='bx bx-minus' style="color: white;"></i></button>
-                                            <span>2</span>
-                                            <button><i class='bx bx-plus' style="color: white;"></i></button>
+                                        <div class="">
+                                            <p style="color: #aaa;">Características</p>
                                         </div>
                                     </td>
-                                    <td>R$ 240</td>
-                                    <td>
-                                        <button class="remove"><i class='bx bx-x' style="color: white;"></i></button>
-                                    </td>
+                                    <td style="color: yellow;">Em Processo...</td>
                                 </tr>
                                 <tr>
+                                    <td>
+                                        <div>
+                                            <span style="color: orange; font-size: 22px;">15 de Dezembro de 2022</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="historic_products">
                                     <td>
                                         <div class="product">
                                             <img src="../../img/bolahalloween.png" alt="" width="70px">
@@ -131,40 +133,40 @@
                                     </td>
                                     <td>R$ 120</td>
                                     <td>
-                                        <div class="qty">
-                                            <button><i class='bx bx-minus' style="color: white;"></i></button>
-                                            <span>2</span>
-                                            <button><i class='bx bx-plus' style="color: white;"></i></button>
+                                        <div class="">
+                                            <p style="color: #aaa;">Características</p>
                                         </div>
                                     </td>
-                                    <td>R$ 240</td>
+                                    <td style="color: red;">Já Entregue</td>
+                                </tr>
+                                <tr>
                                     <td>
-                                        <button class="remove"><i class='bx bx-x' style="color: white;"></i></button>
+                                        <div>
+                                            <span style="color: orange; font-size: 22px;">5 de Setembro de 2022</span>
+                                        </div>
                                     </td>
+                                </tr>
+                                <tr class="historic_products">
+                                    <td>
+                                        <div class="product">
+                                            <img src="../../img/bolabol.png" alt="" width="70px">
+                                            <div class="info">
+                                                <div class="name">Bola de Beisebol</div>
+                                                <div class="category">Beisebol</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 120</td>
+                                    <td>
+                                        <div class="">
+                                            <p style="color: #aaa;">Características</p>
+                                        </div>
+                                    </td>
+                                    <td style="color: grey;">Cancelado</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-                    <aside>
-                        <div class="box">
-                            <header class="resumo_title">Resumo da compra</header>
-                            <div class="info">
-                                <div><span>Sub-total</span><span>R$ 418</span></div>
-                                <div><span>Frete</span><span>Gratuito</span></div>
-                                <div>
-                                    <button>
-                                        Adicionar cupom de desconto
-                                        <i class='bx bx-right-arrow-alt'></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <footer>
-                                <span>Total</span>
-                                <span>R$ 418</span>
-                            </footer>
-                        </div>
-                        <button>Finalizar Compra</button>
-                    </aside>
                 </div>
             </main>
         </section>
