@@ -1,0 +1,56 @@
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+}
+
+.campo input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo .validade {
+    display: inline-block;
+    width: 49%;
+    margin-right: 1%;
+}
+
+.campo .cvv {
+    display: inline-block;
+    width: 49%;
+}
+
+.finalizar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../pCSS/favoritos.css"> -->
+  <link rel="stylesheet" href="../../public/pCSS/FORMATAÇÃO.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../../public/pCSS/pagamento.css">
+
+  <title>pagamento</title>
+</head>
+
+<body>
+  <section>
+    <!--CABEÇALHO-->
+    <header>
+        <section class="dominante">
+            <div class="angemessen">
+                <h2 class="logo">ANGEMESSEN</h2>
+            </div>
+            <nav class="navegation">
+                 <!-- Menu Horizontal -->
+                 <div class="header_botoes">
+                  <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
+                              style="color: orange; font-size: 22px;"></i></a></div>
+                  <div class="icontoty"><a href="#"><i class='bx bxs-user' style="color: orange; font-size: 22px;"
+                              onclick="abrirMenu()"></i></a></div>
+                  <div class="icontoty"><a href="#"><i class='bx bxs-cart'
+                              style="color: orange; font-size: 22px;"></i></a></div>
+              </div>
+              <!-- Menu Lateral -->
+              <div class="side_nav" id="menulat">
+                  <a href="#" onclick="fecharMenu()" style="gap: 15px; font-size: small;">Fechar <i 
+                      class='bx bx-x' style="font-size: 15px; display:flex; align-items: center;">
+                  </i></a>
+                  <span style="justify-content: center;">
+                      Xxxx Xxxx Xxxx
+                  </span>
+                  <span style="font-size: smaller; color: orange; justify-content: center;">
+                      | Membro desde xx/xx/xx |
+                  </span>
+                  <a href="favoritos.html" class="config_menu_lat">Favoritos <p>|</p> <i class='bx bxs-heart'></i></a>
+                  <a href="#" class="config_menu_lat">Histórico <p>|</p> <i class='bx bx-history'></i></a>
+                  <a href="#" class="config_menu_lat">Configurações <p>|</p> <i class='bx bxs-cog'></i></a>
+                  <a href="#" class="config_menu_lat">Fale Conosco <p>|</p> <i class='bx bxs-conversation'></i></a>
+              </div>
+              <!--menu lateral script-->
+              <script>
+                function abrirMenu(){
+                  document.getElementById('menulat').style.width = '250px';
+                }
+
+                function fecharMenu(){
+                  document.getElementById('menulat').style.width = '0px';
+                }
+              </script>
+            </nav>
+        </section>
+        <section class="recessiva">
+            <ul class="menu">
+                <li><a href="secao_produtos.html">PRODUTOS</a></li>
+                <li><a href="#">COLEÇÕES</a></li>
+                <li><a href="teste_sobrenos.html">SOBRE NÓS</a></li>
+            </ul>
+        </section>
+    </header>
+    <!--CONTEUDO PRINCIPAL-->
+    <section class="produtos">
+      <!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Informações do Cartão</title>
+   
+</head>
+
+    <div class="container">
+        <h2>Adicionar Informações do Cartão</h2>
+        <form>
+            <div class="campo">
+                <label for="card">Tipo de Cartão:</label>
+                <select id="card" name="card">
+                    <option value="debit">Débito</option>
+                    <option value="credit">Crédito</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Digite o número do cartão">
+            </div>
+            <div class="campo">
+                <label for="validade">Data de Validade:</label>
+                <input type="text" id="validade" name="validade" class="validade" placeholder="MM/AA">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" class="cvv" placeholder="CVV">
+            </div>
+            <input type="submit" value="Finalizar" class="finalizar">
+        </form>
+    </div>
+    <!-- <script>
+      // Função para exibir o prompt
+      function exibirPrompt() {
+          window.prompt("Pagamento concluído");
+      
+
+      var botaoSalvar = document.querySelector('.finalizar');
+      btnSalvar.addEventListener('click', exibirPrompt);
+      }
+    </script> -->
+
+    </section>
+    <footer>
+      <ul class="icons">
+        <li><a href="#"><img src="../../Imagem/instagram.png" width="24px" height="24px"></a></li>
+        <li><a href="#"><img src="../../Imagem/facebook.png" width="26px" height="26px"></a></li>
+        <li><a href="#"><img src="../../Imagem/linkedin.png" width="20px" height="20px"></a></li>
+      </ul>
+    </footer>
+</body>
+
+</html>
