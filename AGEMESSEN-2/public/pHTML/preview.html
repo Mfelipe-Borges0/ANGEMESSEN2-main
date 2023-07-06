@@ -1,57 +1,91 @@
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pCSS/preview.css">
-    <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
-    <link rel="stylesheet" href="../../public/pCSS/previewHovers.css">
-    <script src=""></script>
-    <title>Pagina inicial - angemessen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../pCSS/preview.css">
+  <link rel="stylesheet" href="../pCSS/FORMATAÇÃO.css">
+  <link rel="stylesheet" href="../../public/pCSS/previewHovers.css">
+  <link rel="stylesheet" href="../pCSS/Css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>produto</title>
 </head>
 <body>
    
     <!--CABEÇALHO-->
+
 <header>
-  <section>
-    <!--CABEÇALHO-->
-    <header>
-        <section class="dominante">
-            <div class="angemessen">
-                <h2 class="logo">ANGEMESSEN</h2>
-            </div>
-            <nav class="navegation">
-                <div class="header_botoes">
-                    <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
-                                style="color: orange; font-size: 22px;"></i></a></div>
-                    <div class="icontoty"><a href="#"><i class='bx bxs-user'
-                                style="color: orange; font-size: 22px;"></i></a></div>
-                    <div class="icontoty"><a href="#"><i class='bx bxs-cart'
-                                style="color: orange; font-size: 22px;"></i></a></div>
-                </div>
-            </nav>
-        </section>
-        <section class="recessiva">
-            <ul class="menu">
-                <li><a href="secao_produtos.html">PRODUTOS</a></li>
-                <li><a href="#">COLEÇÕES</a></li>
-                <li><a href="teste_sobrenos.html">SOBRE NÓS</a></li>
-            </ul>
-        </section>
+  <section class="dominante">
+    <div class="angemessen">
+      <h2 class="logo">ANGEMESSEN</h2>
+    </div> 
+    <nav class="navegation">
+        <!-- Menu Horizontal -->
+        <div class="header_botoes">
+          <div class="icontoty"><a href="#"><i class='bx bx-search-alt-2'
+                      style="color: orange; font-size: 22px;"></i></a></div>
+          <div class="icontoty"><a href="#"><i class='bx bxs-user' style="color: orange; font-size: 22px;"
+                      onclick="abrirMenu()"></i></a></div>
+          <div class="icontoty"><a href="#"><i class='bx bxs-cart'
+                      style="color: orange; font-size: 22px;"></i></a></div>
+      </div>
+      <!-- Menu Lateral -->
+
+      <div class="side_nav" id="menulat">
+          <a href="#" onclick="fecharMenu()" style="gap: 15px; font-size: small;">Fechar <i 
+              class='bx bx-x' style="font-size: 15px; display:flex; align-items: center;">
+          </i></a>
+          <span style="justify-content: center;">
+              Xxxx Xxxx Xxxx
+          </span>
+          <span style="font-size: smaller; color: orange; justify-content: center;">
+              | Membro desde xx/xx/xx |
+          </span>
+          <a href="favoritos.html" class="config_menu_lat">Favoritos <p>|</p> <i class='bx bxs-heart'></i></a>
+          <a href="#" class="config_menu_lat">Histórico <p>|</p> <i class='bx bx-history'></i></a>
+          <a href="#" class="config_menu_lat">Configurações <p>|</p> <i class='bx bxs-cog'></i></a>
+          <a href="#" class="config_menu_lat">Fale Conosco <p>|</p> <i class='bx bxs-conversation'></i></a>
+
+          <script>
+            function abrirMenu(){
+              document.getElementById('menulat').style.width = '250px';
+              }
+
+            function fecharMenu(){
+              document.getElementById('menulat').style.width = '0px';
+              }
+          </script>
+      </div>
+
+    </nav>
+  </section>
+  <section class="recessiva">
+    <ul class="menu">
+      <li><a href="../../public/pHTML/secao_produtos.html">PRODUTOS</a></li>
+      <li><a href="../../public/pHTML/colecoes.html">COLEÇÕES</a></li>
+      <li><a href="../../public/pHTML/teste_sobrenos.html">SOBRE NÓS</a></li>
+    </ul>
+  </section>
 </header>
        
     <!--CONTEUDO PRINCIPAL-->
-<section class="produtos">
-  <div class="father">
-    <div class="mother">
+<section class="produtos"><!--CAIXA QUE ABRANGE TODO O CODIGO-->
+
+  <div class="father"><!--CAIXA PARA MOTHER-->
+
+    <div class="mother"><!--CAIXA DIVIDIDA AO MEIO PARA PARTE DAS FOTOS E COMPRA-->
+
+      <!--pequenas fotos dos produtos-->
       <div class="column">
           <div class="fotoMBola"></div>
           <div class="fotoMBola"></div>
           <div class="fotoMBola"></div>
           <div class="fotoMBola"></div>
         </div>
+      <!--foto principal do prooduto-->
       <div class="fotoBola">
       </div>
       </div>
@@ -62,33 +96,39 @@
           </div>
 
 
-          <hr class="hrespecifi">
+          <hr class="hrespecifi"><!--linha-->
 
 
           <div class="miniespecifi">
             <div class="miniespecificontent">
-              <div class="sizeselector"></div>
+              <div class="sizeselector">10cm</div>
+              <div class="sizeselector">20cm</div>
+              <div class="sizeselector">30cm</div>
             </div>
           </div>
 
 
-          <hr class="hrespecifi">
+          <hr class="hrespecifi"><!--linha-->
 
 
           <div class="miniespecifi">
             <div class="miniespecificontent">
+              <div class="sizeselector"> <span class="red">red</span></div>
+              <div class="sizeselector"><span class="blue">blue</span></div>
+              <div class="sizeselector"><span class="green">green</span></div>
             </div>
           </div>
 
 
-          <hr class="hrespecifi">
+          <hr class="hrespecifi"> <!--linha-->
 
 
           <div class="miniespecifi">
             <div class="miniespecificontent">
+              <div class="sizeselector">spikes</div>
+              <div class="sizeselector">asas</div>
+              <div class="sizeselector">fitas</div>
             </div>
-
-
           </div>
         </div>
         <div class="kart">  
@@ -98,14 +138,73 @@
           </div>
 
 
-          <hr class="hrespecifi">
+          <hr class="hrespecifi"> <!--linha--> 
 
 
           <div class="avaliacaokart">
+
+              <button class="button">Avaliações</button>
+
+              <div class="popup-wrapper">
+                  <div class="popup">
+                    <div class="popup-close" onmouseover="changeColor(this)" onmouseout="resetColor(this)">&times;</div>
+                    <div class="popup-content">
+                      <div class="estrelas">
+                        <div>A</div>
+                        <div>B</div>
+                        <div>C</div>
+                      </div>
+                    <span class="totalavaliacoes">Total de avaliações: 1232</span>
+                    <span class="totalavaliacoes2">votos em 5 estrelas: 1232</span>
+                    <span class="totalavaliacoes2">votos em 4 estrelas: 0</span>
+                    <span class="totalavaliacoes2">votos em 3 estrelas: 0</span>
+                    <span class="totalavaliacoes2">votos em 2 estrelas: 0</span>
+                    <span class="totalavaliacoes2">votos em 1 estrela: 0</span>
+                    <span class="totalavaliacoes2">votos em 0 estrelas: 0</span>
+                    <span ></span>
+                    </div>
+                  </div>
+              </div>
+              <script>
+                // Função para mudar a cor ao passar o mouse
+                function resetColor(element) {
+                  if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "orange";
+                  } else if (element.classList.contains('popup-close')) {
+                    element.style.color = "white";
+                  }
+                }
+                // Função para resetar a cor ao remover o mouse
+                function changeColor(element) {
+                  if (element.classList.contains('avancar')) {
+                    element.style.backgroundColor = "gold";
+                  } else if (element.classList.contains('popup-close')) {
+                    element.style.color = "red";
+                  }
+                }
+                
+                const button = document.querySelector('button')
+                const popupWrapper = document.querySelector('.popup-wrapper')
+            
+                button.addEventListener('click', () => {
+                  popupWrapper.style.display = 'block'
+                })
+            
+                popupWrapper.addEventListener('click', event => {
+                  const classNameOfClickedElement = event.target.classList[0];
+                  console.log(classNameOfClickedElement)
+                  const classNames = ['popup-close', 'popup-wrapper']
+                  const closePopup = classNames.some(className => className === classNameOfClickedElement)
+            
+                  if (closePopup) {
+                    popupWrapper.style.display = 'none'
+                  }
+                })
+              </script>
           </div>
 
 
-          <hr class="hrespecifi">
+          <hr class="hrespecifi"><!--linha--> 
          
           <div class="precokart">
             <div class="columnprecokart">
@@ -120,8 +219,9 @@
           </div>
 
 
-          <hr class="hrespecifi">
+          <hr class="hrespecifi"> <!--linha-->
 
+          <!--parte da compra-->
           <div class="opcaokart">
             <button class="finish">
               <span class="finished">comprar já</span>
@@ -136,12 +236,14 @@
       </div>
     </div>
   </section>
+
+  <!--RODAPÉ-->
   <footer>
-      <ul class="icons">
-          <li><a href="#"><img src="" width="24px" height="24px"></a></li>
-          <li><a href="#"><img src="../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
-          <li><a href="#"><img src="../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
-      </ul>
+    <ul class="icons">
+      <li><a href="#"><img src="../../img/icons8-instagram-24.png" width="24px" height="24px"></a></li>
+      <li><a href="#"><img src="../../img/icons8-facebook-25.png" width="26px" height="26px"></a></li>
+      <li><a href="#"><img src="../../img/icons8-linkedin-24.png" width="20px" height="20px"></a></li>
+  </ul>
   </footer>
 </body>
 </html>
